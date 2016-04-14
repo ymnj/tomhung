@@ -3,9 +3,23 @@ body {
   background-color: #E3EAED;
 }
 
+
+.section-header {
+
+  text-transform: uppercase;
+  margin-bottom: 10%;
+
+  hr {
+    width: 30%;
+  }
+}
+
+section {
+  padding: 10% 0%;;
+}
+
 .banner {
-  padding: 13% 0;
-  margin-bottom: 50px;
+  padding: 10% 0;
   background-color: #24464C;
   color: #E3EAED;
 
@@ -19,7 +33,7 @@ body {
   background-color: #E3EAED;
   color: #24464C;
 
-  .card.col.s6 {
+  .card.col.s12 {
     padding: 0;
     margin: 0;
     background-color: #669BA3;
@@ -35,6 +49,8 @@ body {
 
     .card-reveal {
 
+      opacity: 0.9;
+
       .card-title.grey-text.text-darken-4 {
         margin-bottom: 15%;
       }
@@ -46,24 +62,26 @@ body {
         a {
           color: #24464C;
         }
-        
+
       }
     }
-  }
-
-  hr {
-    width: 30%;
-    margin-bottom: 5%;
-  }
-  
-  h5 {
-    text-transform: uppercase;
   }
 
   h6 {
     font-size: 1.5em;
     margin: 0;
     color: #669BA3;
+  }
+
+}
+
+.portfolio {
+
+  background-color: #669BA3;
+  color: #E3EAED;
+  
+  .section-header {
+    color: #E3EAED;
   }
 
 }
