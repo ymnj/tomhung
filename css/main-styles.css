@@ -1,119 +1,24 @@
-/********* IMPORT *********/
-@import url("clearfix.css");
-@import url("jquery-styles.css");
-@import url("work-styles.css");
-/********* GENERAL *********/
-html {
-  overflow-y: scroll; }
-
 body {
-  background-color: white;
-  position: relative; }
+  background-color: #E3EAED; }
 
-#main-wrap {
-  max-width: 1000px;
-  margin: 5% auto;
-  background-color: white; }
+.banner {
+  padding: 13% 0;
+  margin-bottom: 50px;
+  background-color: #24464C;
+  color: #E3EAED; }
+  .banner h1 {
+    font-weight: 900;
+    text-transform: uppercase; }
 
-h1, h2, h3, h4, ul, li {
-  padding: 0;
-  margin: 0; }
-
-a:link {
-  text-decoration: none;
-  color: black; }
-
-a:visited {
-  color: black; }
-
-/********* HEADER *********/
-#head-container {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 3px;
-  margin-bottom: 5%; }
-  #head-container ul {
-    margin-top: 15px; }
-  #head-container li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0 20px;
-    border-right: 1px solid black; }
-    #head-container li:last-child {
-      padding-right: 0;
-      border-right: none; }
-
-#logo {
-  position: absolute;
-  display: inline-block; }
-  #logo h1 {
-    font-weight: 300;
-    font-size: 2.5em; }
-
-#nav-bar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 40px; }
-  #nav-bar a {
-    padding-bottom: 10px;
-    position: relative; }
-    #nav-bar a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: steelblue;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s; }
-    #nav-bar a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
-
-/********* BODY CONTENT *********/
-#content-wrap {
-  width: 100%;
-  background: white; }
-
-.profile-photo {
-  display: block;
-  margin: 100px auto 20px;
-  width: 250px;
-  border-radius: 20%; }
-
-.social {
-  width: 170px;
-  margin: 0 auto; }
-  .social a {
-    margin: 0 10px; }
-  .social p {
-    text-align: center; }
-
-/********* PHOTO CONTENT *********/
-#photo-content {
-  width: 100%; }
-  #photo-content img {
-    display: block;
-    width: 100%; }
-
-.single-img {
-  width: 100%; }
-
-.double-img {
-  width: 50%;
-  float: left; }
-
-.triple-img {
-  float: left;
-  width: 33.33%;
-  height: auto; }
+.about {
+  background-color: #E3EAED;
+  color: #24464C; }
+  .about hr {
+    width: 30%;
+    margin-bottom: 25px; }
+  .about h5 {
+    text-transform: uppercase; }
+  .about p {
+    margin: 0; }
 
 /*# sourceMappingURL=main-styles.css.map */
