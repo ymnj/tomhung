@@ -9,7 +9,7 @@ body {
   background-color: #24464C;
   color: #E3EAED;
 
-  h1 {
+  h1, h6 {
     font-weight: 900;
     text-transform: uppercase;
   }
@@ -19,16 +19,51 @@ body {
   background-color: #E3EAED;
   color: #24464C;
 
+  .card.col.s6 {
+    padding: 0;
+    margin: 0;
+    background-color: #669BA3;
+
+    .card-content {
+      padding: 5px 20px 0;
+      
+      i {
+        font-size: 2em;
+        margin: 0;
+      }
+    }
+
+    .card-reveal {
+
+      .card-title.grey-text.text-darken-4 {
+        margin-bottom: 15%;
+      }
+
+      .link-icons {
+        margin: 5% 0%;
+        font-size: 1.5em;
+      
+        a {
+          color: #24464C;
+        }
+        
+      }
+    }
+  }
+
   hr {
     width: 30%;
-    margin-bottom: 25px;
+    margin-bottom: 5%;
   }
   
   h5 {
     text-transform: uppercase;
   }
 
-  p {
+  h6 {
+    font-size: 1.5em;
     margin: 0;
+    color: #669BA3;
   }
+
 }

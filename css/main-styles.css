@@ -6,19 +6,37 @@ body {
   margin-bottom: 50px;
   background-color: #24464C;
   color: #E3EAED; }
-  .banner h1 {
+  .banner h1, .banner h6 {
     font-weight: 900;
     text-transform: uppercase; }
 
 .about {
   background-color: #E3EAED;
   color: #24464C; }
+  .about .card.col.s6 {
+    padding: 0;
+    margin: 0;
+    background-color: #669BA3; }
+    .about .card.col.s6 .card-content {
+      padding: 5px 20px 0; }
+      .about .card.col.s6 .card-content i {
+        font-size: 2em;
+        margin: 0; }
+    .about .card.col.s6 .card-reveal .card-title.grey-text.text-darken-4 {
+      margin-bottom: 15%; }
+    .about .card.col.s6 .card-reveal .link-icons {
+      margin: 5% 0%;
+      font-size: 1.5em; }
+      .about .card.col.s6 .card-reveal .link-icons a {
+        color: #24464C; }
   .about hr {
     width: 30%;
-    margin-bottom: 25px; }
+    margin-bottom: 5%; }
   .about h5 {
     text-transform: uppercase; }
-  .about p {
-    margin: 0; }
+  .about h6 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #669BA3; }
 
 /*# sourceMappingURL=main-styles.css.map */
