@@ -21,16 +21,8 @@
 		<h6>Vancouver, BC</h6>
 	</header>
 
-  <div class="col hide-on-small-only m3 l2">
-    <ul class="section table-of-contents">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
- 
 	<main>
-		<section id="about" class="about section scrollspy">
+		<section class="about">
 			<div class="section-header">
 				<h5 class="center-align">About me</h5>
 				<hr>
@@ -80,7 +72,7 @@
 			</div>
 		</section>
 
-		<section id="portfolio" class="portfolio">
+		<section class="portfolio">
 			<div class="section-header">
 				<h5 class="center-align">Portfolio</h5>
 				<hr>
@@ -260,7 +252,7 @@
 			</div>
 		</section>
 
-		<section id="contact" class="contact">
+		<section class="contact">
 			<div class="section-header">
 				<h5 class="center-align">Contact Me</h5>
 				<hr>
@@ -294,21 +286,7 @@
 	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 	    $('.modal-trigger').leanModal();
 	  	});
-
-		$(function() {
-		  $('a[href*="#"]:not([href="#"])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html, body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-		        return false;
-		      }
-		    }
-		  });
-		});
+		
 		
 	</script>
 	
