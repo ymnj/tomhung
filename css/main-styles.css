@@ -1,6 +1,10 @@
 body {
   background-color: #E3EAED; }
 
+ul.table-of-contents {
+  position: fixed;
+  left: 10px; }
+
 .section-header {
   text-transform: uppercase;
   margin-bottom: 10%; }
@@ -58,5 +62,10 @@ section {
 
 .contact {
   background-color: #E3EAED; }
+  .contact a > i {
+    position: relative;
+    top: 4px; }
+  .contact a {
+    color: #24464C; }
 
 /*# sourceMappingURL=main-styles.css.map */
