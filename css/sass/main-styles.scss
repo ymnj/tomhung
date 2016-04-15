@@ -33,7 +33,11 @@ section {
   background-color: #E3EAED;
   color: #24464C;
 
-  .card.col.s12 {
+  .story p {
+    padding: 0% 5%;
+  }
+
+  .card.col.m12 {
     padding: 0;
     margin: 0;
     background-color: #669BA3;
@@ -84,4 +88,17 @@ section {
     color: #E3EAED;
   }
 
+  .modal-content {
+    color: #24464C;
+  }
+
+  .modal.bottom-sheet {
+    max-height: 60%;
+  }
+
+}
+
+.contact {
+
+  background-color: #E3EAED;
 }
