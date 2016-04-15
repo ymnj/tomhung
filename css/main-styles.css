@@ -27,23 +27,22 @@ section {
   color: #24464C; }
   .about .story p {
     padding: 0% 5%; }
-  .about .card.col.m12 {
+  .about .card.col.m6 {
     padding: 0;
-    margin: 0;
     background-color: #669BA3; }
-    .about .card.col.m12 .card-content {
+    .about .card.col.m6 .card-content {
       padding: 5px 20px 0; }
-      .about .card.col.m12 .card-content i {
+      .about .card.col.m6 .card-content i {
         font-size: 2em;
         margin: 0; }
-    .about .card.col.m12 .card-reveal {
+    .about .card.col.m6 .card-reveal {
       opacity: 0.9; }
-      .about .card.col.m12 .card-reveal .card-title.grey-text.text-darken-4 {
+      .about .card.col.m6 .card-reveal .card-title.grey-text.text-darken-4 {
         margin-bottom: 15%; }
-      .about .card.col.m12 .card-reveal .link-icons {
+      .about .card.col.m6 .card-reveal .link-icons {
         margin: 5% 0%;
         font-size: 1.5em; }
-        .about .card.col.m12 .card-reveal .link-icons a {
+        .about .card.col.m6 .card-reveal .link-icons a {
           color: #24464C; }
   .about h6 {
     font-size: 1.5em;
