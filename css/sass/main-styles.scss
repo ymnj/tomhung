@@ -42,37 +42,17 @@ section {
     padding: 0% 5%;
   }
 
+  .link-icons {
+    font-size: 1.5em;
+  
+    a {
+      color: #24464C;
+      margin: 0 15px;
+    }
+  }
+
   .card.col.m6 {
-    padding: 0;
-    background-color: #669BA3;
-
-    .card-content {
-      padding: 5px 20px 0;
-      
-      i {
-        font-size: 2em;
-        margin: 0;
-      }
-    }
-
-    .card-reveal {
-
-      opacity: 0.9;
-
-      .card-title.grey-text.text-darken-4 {
-        margin-bottom: 15%;
-      }
-
-      .link-icons {
-        margin: 5% 0%;
-        font-size: 1.5em;
-      
-        a {
-          color: #24464C;
-        }
-
-      }
-    }
+    padding: 0; 
   }
 
   h6 {
