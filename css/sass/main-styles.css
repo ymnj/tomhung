@@ -28,13 +28,10 @@ section {
   .about .story p {
     padding: 0% 5%; }
   .about .link-icons {
-    font-size: 1.5em;
-    margin: 15px 0; }
+    font-size: 1.5em; }
     .about .link-icons a {
       color: #24464C;
       margin: 0 15px; }
-      .about .link-icons a:hover {
-        color: #1695A3; }
   .about .card.col.m6 {
     padding: 0; }
   .about h6 {

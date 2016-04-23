@@ -44,11 +44,18 @@ section {
 
   .link-icons {
     font-size: 1.5em;
+    margin: 15px 0;
   
     a {
       color: #24464C;
       margin: 0 15px;
+
+      &:hover {
+        color: #1695A3;
+      }
     }
+
+
   }
 
   .card.col.m6 {
