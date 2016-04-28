@@ -36,7 +36,8 @@ section {
       .about .link-icons a:hover {
         color: #1695A3; }
   .about .card.col.m6 {
-    padding: 0; }
+    padding: 0;
+    max-width: 400px; }
   .about h6 {
     font-size: 1.5em;
     margin: 0;
