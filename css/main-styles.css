@@ -1,64 +1,13 @@
 body {
-  background-color: #E3EAED; }
+  background: url("../images/main-background.jpg") #A9B7C0 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right; }
 
-ul.table-of-contents {
-  position: fixed;
-  left: 10px; }
-
-.section-header {
-  text-transform: uppercase;
-  margin-bottom: 10%; }
-  .section-header hr {
-    width: 30%; }
-
-section {
-  padding: 10% 0%; }
-
-.banner {
-  padding: 10% 0;
-  background-color: #24464C;
-  color: #E3EAED; }
-  .banner h1, .banner h6 {
-    font-weight: 900;
-    text-transform: uppercase; }
-
-.about {
-  background-color: #E3EAED;
-  color: #24464C; }
-  .about .story p {
-    padding: 0% 5%; }
-  .about .link-icons {
-    font-size: 1.5em;
-    margin: 15px 0; }
-    .about .link-icons a {
-      color: #24464C;
-      margin: 0 15px; }
-      .about .link-icons a:hover {
-        color: #1695A3; }
-  .about .card.col.m6 {
-    padding: 0;
-    max-width: 400px; }
-  .about h6 {
-    font-size: 1.5em;
-    margin: 0;
-    color: #669BA3; }
-
-.portfolio {
-  background-color: #669BA3;
-  color: #E3EAED; }
-  .portfolio .section-header {
-    color: #E3EAED; }
-  .portfolio .modal-content {
-    color: #24464C; }
-  .portfolio .modal.bottom-sheet {
-    max-height: 80%; }
-
-.contact {
-  background-color: #E3EAED; }
-  .contact a > i {
-    position: relative;
-    top: 4px; }
-  .contact a {
-    color: #24464C; }
+#main .mdl-layout__header,
+#main .mdl-layout__drawer-button {
+  color: #fff; }
 
 /*# sourceMappingURL=main-styles.css.map */

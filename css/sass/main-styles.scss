@@ -1,105 +1,20 @@
-
 body {
-  background-color: #E3EAED;
+  // background-color: #A9B7C0;
+  background: url("../images/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right;
+}
+
+#main .mdl-layout__header,
+#main .mdl-layout__drawer-button {
+  color: #fff;
 }
 
 
-ul.table-of-contents {
-  position: fixed;
-  left: 10px;
-}
-
-.section-header {
-
-  text-transform: uppercase;
-  margin-bottom: 10%;
-
-  hr {
-    width: 30%;
-  }
-}
-
-section {
-  padding: 10% 0%;;
-}
-
-.banner {
-  padding: 10% 0;
-  background-color: #24464C;
-  color: #E3EAED;
-
-  h1, h6 {
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-}
-
-.about {
-  background-color: #E3EAED;
-  color: #24464C;
-
-  .story p {
-    padding: 0% 5%;
-  }
-
-  .link-icons {
-    font-size: 1.5em;
-    margin: 15px 0;
-  
-    a {
-      color: #24464C;
-      margin: 0 15px;
-
-      &:hover {
-        color: #1695A3;
-      }
-    }
-
-
-  }
-
-  .card.col.m6 {
-    padding: 0; 
-    max-width: 400px;
-  }
-
-  h6 {
-    font-size: 1.5em;
-    margin: 0;
-    color: #669BA3;
-  }
-
-}
-
-.portfolio {
-
-  background-color: #669BA3;
-  color: #E3EAED;
-  
-  .section-header {
-    color: #E3EAED;
-  }
-
-  .modal-content {
-    color: #24464C;
-  }
-
-  .modal.bottom-sheet {
-    max-height: 80%;
-  }
-
-}
-
-.contact {
-
-  background-color: #E3EAED;
-
-  a > i {
-    position: relative;
-    top: 4px;
-  }
-
-  a {
-    color: #24464C;
-  }
-}
+//#A9B7C0 Gre Blue
+//#C7D8C6 Minty
+//#EFD9C1 Light
+//#CCCBC6 Powder

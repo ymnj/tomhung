@@ -2,269 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tom Hung | Vancouver, BC</title>
-  <link rel="stylesheet" type="text/css" href="css/main-styles.css">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/main-styles.css">
 </head>
 <body>
-  
 
-	<header class="banner center-align z-depth-2">
-		<h1>Tom Hung</h1>
-		<h6>Vancouver, BC</h6>
-	</header>
+	<div id="main" class="mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--transparent">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-layout-title mdl-color-text--grey-900">TOM HUNG</span>
+	      <!-- Add spacer, to align navigation to the right -->
+	      <div class="mdl-layout-spacer"></div>
+	      <!-- Navigation -->
+	      <nav class="mdl-navigation">
+	        <a class="mdl-navigation__link mdl-color-text--grey-900" href="">Home</a>
+	        <a class="mdl-navigation__link mdl-color-text--grey-900" href="">Photo</a>
+	        <a class="mdl-navigation__link mdl-color-text--grey-900" href="">Portfolio</a>
+	      </nav>
+	    </div>
+	  </header>
+		<div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">Title</span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">Photo</a>
+        <a class="mdl-navigation__link" href="">Portfolio</a>
+	    </nav>
+	  </div>
 
-	<main>
-		<section class="about">
-			<div class="section-header">
-				<h5 class="center-align">About me</h5>
-				<hr>
-			</div>
+	  <main class="mdl-layout__content">
+	  </main>
+	</div>
 
-			<div class="container">
-				<div class="row">
-					<div class="col m12 l6 story">
-				
-						<h6 class="center-align">Story</h6>
-
-						<p>
-						Welcome. My name is Tom and I am a Vancouver based web developer. I first started coding a year ago when I decided to teach myself the fundamentals of HTML + CSS + Javascript. After experiencing the joy of creating simple interactive web pages, I was hooked on learning more. Now, as a recent graduate of CodeCore Bootcamp, I have increased my knowledge of web technologies and experience building functional web applications.
-						</p>
-
-						<p>
-						Please check out my Github to see some of the projects I have worked on or feel free to get in contact with me!
-						</p>
-
-						<div class="link-icons center-align">
-							<a href="http://www.linkedin.com/in/tomhungyvr" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-							<a href="https://github.com/ymnj" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/u/1/103585423442230985484/about" target="_blank"><i class="fa fa-google-plus"></i></a>
-							<a href="https://www.instagram.com/ym.nj/" target="_blank"><i class="fa fa-instagram"></i></a>
-						</div>
-					</div>
-
-					<div class="col s8 offset-s2 m6 offset-m3 l6">
-						<div class="card z-depth-2">
-					    <div class="card-image">
-					      <img src="images/tom.jpg">
-					    </div>
-					  </div>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-
-		<section class="portfolio">
-			<div class="section-header">
-				<h5 class="center-align">Portfolio</h5>
-				<hr>
-			</div>
-
-			<div class="container row">
-				<div class="col m8 offset-m2 center-align">
-				<p>
-					Here are a collection of some of the projects that I have been working on recently. These projects are an accumulation of the many languages, frameworks, and design patterns I have learned over the last three months.
-				</p>
-			
-				</div>
-			</div>
-
-			<!-- Peregrine Card -->
-			<div class="container row">
-				<div class="col s12 l4">
-					<a class="modal-trigger" href="#peregrine-modal">
-						<div class="card popup">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img src="images/peregrine-screen.png">
-					    </div>
-					    <div class="card-content center-align">
-					      <span class="card-title activator grey-text text-darken-4">Peregrine</span>
-					    </div>
-					  </div>
-					</a>
-				</div>
-
-				<!-- Peregrine Modal -->
-				<div id="peregrine-modal" class="modal bottom-sheet">
-			    <div class="modal-content">
-			    	<div class="container">
-				      <h4>Peregrine</h4>
-
-				      <p><a href="http://peregrine-app.herokuapp.com" target="_blank">View Website</a></p>
-							<p><a href="https://github.com/ymnj/peregrine" target="_blank">Source Code on GitHub</a></p>
-
-				      <p>
-				      	The idea for Peregrine was conceived when I frequently saw a friend posting photos of himself with new friends he met while traveling to other countries. As well as local subreddits such as /vancouver or /taiwan would often have foreign travelers asking locals about places to visit or people willing to meet up to show them around. 
-				      </p>
-
-				      <p>
-				      	My initial idea was simple: <em>a website that would connect fellow travelers together by common interests before their trip has even started.</em>
-				      </p>
-
-				      <p>
-								One of the biggest lessons I learned early on for this project was that no matter how simple an <em>idea</em> seems, it's still crucial to plan out the development process. I mistakenly jumped right into the project after a designing a few wireframes and a basic ERD, but didn't spend enough time on site functionality and implementation. Therefore, any neat ideas I had during development was often implemented without understanding how it would benefit or work with current functions. Needless to say, my simple idea suddenly became not so simple. 
-				      </p> 
-				      <p>
-				      	Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before. Going into this project, I knew I wanted to use MaterializeCSS as my front-end framework instead of the more popular Bootstrap. I love beautifully designed sites and felt MaterializeCSS provides a more unique look with minimal custom CSS styles compared to Bootstrap. Luckily, having worked with Bootstrap in the past, MaterializeCSS was extremely easy to learn due to its similarities in styling elements. For a travel application, I knew I would require some sort of map and at first the obvious choice was GoogleMaps. However, in my search I stumbled upon Mapbox and was immediately attracted to the numerous tools, design options and clear documentations they provided. While the process of implementing the map with the custom markers and options I wanted, combined with my desire to AJAX the entire page for that specific controller proved to be difficult; I was very happy with how the overall design turned out for my trips page.
-				      </p>
-							<p>
-								Going forward, I am going to continue working on this project to hopefully complete the initial idea I had in the beginning and connect all the functions I have implemented into this application. I think it would be a really cool web application if I can implement some of the core features I had planned for this project such as searching for users based on itinerary and a messaging system. Despite many hiccups, this solo project was a learning process throughout its entire development and I'm happy with how its progressed so far.
-							</p>
-
-							<p>
-								<em>Built with Ruby on Rails, MaterializeCSS, jQuery, Javascript, CSS3, Mapbox</em>
-							</p>
-				     </div>
-			    </div>
-			    <div class="modal-footer">
-			      <a class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right">close</i></a>
-			    </div>
-			  </div>
-
-				<!-- Codrlogue Card -->
-				<div class="col s12 l4">
-					<a class="modal-trigger" href="#codrlogue-modal">
-						<div class="card popup">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img src="images/codrlogue-screen.png">
-					    </div>
-					    <div class="card-content center-align">
-					      <span class="card-title activator grey-text text-darken-4">Codrlogue</span>
-					    </div>
-					  </div>
-					</a>
-				</div>
-
-				<!-- Codrlogue-Modal -->
-				<div id="codrlogue-modal" class="modal bottom-sheet">
-			    <div class="modal-content">
-			      <div class="container">
-				      <h4>Codrlogue</h4>
-							
-							<p><a href="http://codrlogue.herokuapp.com" target="_blank">View Website</a></p>
-							<p><a href="https://github.com/jennli/codrlogue" target="_blank">Source Code on GitHub</a></p>
-
-				      <p>
-				      	<b>The goal:</b> Build a networking service targeted at connecting employers with CodeCore students looking for employment.
-				      </p>
-				      <p>
-				      	Codrlogue was developed over the course of three days as part of CodeCore's group project "hackathon". It was the first experience we had working on a collaborative project and the greatest challenge was working effectively as a team. As a group of 6 students, our first step was defining the scope of the project by evaluating the requirements and features expected by the client(lead instructor Tam). I really enjoy this part of the process where before any code is written, everyone in the group can discuss and present their ideas on what should go into the application and how it should be approached. 
-				      </p>
-
-				      <p>
-				      	The majority of my time was spent working on any development involving the user model on the back-end as well as the overall design of the user profile interface. This involved communicating with other members of the group to establish timelines for individual tasks in order to maintain a consistent workflow. Otherwise, we ran into issues where areas of our code were dependent on other individuals' work and this meant wasted time spent waiting. We tried to follow a basic implementation of the SCRUM methodology in order to achieve this as well as using Trello to help plan out our sprints. I was also tasked with implementing the mailing system allowing employers to contact students if they were interested. 
-							</p>
-
-							<p>
-								A great learning point of this project was understanding how to properly use git in a team environment. Although we were familiar using git and github on our own projects, it was a challenge when we first tried merging our individual branches with everyone else's work. Knowing when to pull, merge or submit pull requests was quite chaotic but eventually, the process became straightforward when we communicated with one another and established the current status of our individual work. Merge conflicts were surprisingly rare during our development.
-							</p>
-
-				      </p>
-								Despite being a project with only 3 days of work, I was incredibly amazed at what our team was able to accomplish. Although Codrlogue was not perfect and the experience was a tough and stressful three days/nights, the result was a self-realization of how far many of us have come since 2 months prior to starting the bootcamp. The opportunity to work as a team was one of the most enjoyable and educational experiences I had in the program and I am looking forward to finding an opportunity where I can again contribute to interesting and fun projects.
-				      </p>
-
-				      <p>
-				      	<em>Built with Ruby on Rails, Bootstrap, jQuery, Javascript, CSS3</em>
-				      </p>
-				      
-				     </div>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right">close</i></a>
-			    </div>
-			  </div>
-
-				<!-- Blog Card -->
-				<div class="col s12 l4">
-					<a class="modal-trigger" href="#blog-modal">
-						<div class="card popup">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      <img src="images/blog-screen.png">
-					    </div>
-					    <div class="card-content center-align">
-					      <span class="card-title activator grey-text text-darken-4">Rails Blog</span>
-					    </div>
-					  </div>
-				  </a>
-				</div>
-
-				<!-- Blog Modal -->
-			  <div id="blog-modal" class="modal bottom-sheet">
-			    <div class="modal-content">
-			      <div class="container">
-				      <h4>Rails Blog</h4> 
-
-				      <p><a href="http://tomhung-blog.herokuapp.com" target="_blank">View Website</a></p>
-							<p><a href="https://github.com/ymnj/rails-blog" target="_blank">Source Code on GitHub</a></p>
-
-				      <p>
-				      	Developing this blog was my introduction to the Rails framework and the MVC design pattern. It was an ongoing project throughout the bootcamp and was built overtime as I learned more about the concepts and languages that go into a web application.   
-				      </p>
-				      <p>
-								While this sort of project is fairly basic and non-complex, the experience allowed me to understand the RESTful style of building web applications as well standard CRUD functions for dealing with the postgreSQL database. Throughout the process, I was able to implement multiple models with 1:M or M:N relationships and integrate them with my controllers and views. I was also able to experiment with numerous Rails gems that provided useful functions such as CanCanCan for authorization or friend_id for URL slugs to name a few.  
-				      </p>
-
-				      <p>
-				      	<em>Built with Ruby on Rails, Bootstrap, jQuery, Javascript, CSS3</em>
-				      </p>
-				     </div>
-			    </div>
-			    <div class="modal-footer">
-			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right">close</i></a>
-			    </div>
-			  </div>
-			</div>
-		</section>
-
-		<section class="contact">
-			<div class="section-header">
-				<h5 class="center-align">Contact Me</h5>
-				<hr>
-			</div>
-
-			<div class="container center-align">
-				<div class="row">
-					<div class="col s12">
-						<h5><a href="mailto:tom@tomhung.ca"><i class="material-icons">email</i> tom@tomhung.ca</a></h5>
-						<h5><a href="tel:604-365-4584"><i class="material-icons">contact_phone</i> 604 365-4584</a></h5>
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-	</main>
-	
-
-  <!-- jQuery -->
-  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-
-	<script type="text/javascript">
-
-		$(document).ready(function(){
-
-			$('.popup').on('mouseover', function(){
-				$(this).addClass('z-depth-5');
-			}).on('mouseout', function(){
-				$(this).removeClass('z-depth-5');
-			});
-
-	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-	    $('.modal-trigger').leanModal();
-	  	});
-		
-		
-	</script>
-	
 </body>
 </html>
