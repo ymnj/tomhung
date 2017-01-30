@@ -8,10 +8,76 @@ body {
   background-position: right;
 }
 
-#main .mdl-layout__header,
-#main .mdl-layout__drawer-button {
-  color: #fff;
+/******************************* NAVIGATION *******************************/
+
+#main {
+	.mdl-layout__header-row {
+  	width: 80%;
+  	margin: 5% auto 0;
+		padding: 0;
+	}
+
+	.mdl-layout-title a {
+		padding: 0;
+	}
+
+	.mdl-layout__content {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
+
+#logo {
+	width: 40px;
+	height: 40px;
+}
+
+nav {
+	a {
+	  position: relative;
+	}
+	a:before {
+	  content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  bottom: 0;
+	  left: 0;
+	  background-color: #A3371A;
+	  visibility: hidden;
+	  -webkit-transform: scaleX(0);
+	  transform: scaleX(0);
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+	a:hover:before {
+	  visibility: visible;
+	  -webkit-transform: scaleX(1);
+	  transform: scaleX(1);
+	}
+}
+
+.mdl-layout__header-row nav a.mdl-navigation__link {
+	padding: 0;
+	margin: 0 24px;
+	color: #212121;
+}
+
+.mdl-layout__header-row nav a.mdl-navigation__link:last-child {
+	margin-right: 0;
+}
+
+.mdl-layout__header-row nav a.mdl-navigation__link.is-active {
+	color: #A3371A;
+}
+
+
+/******************************* HOME *******************************/
+
+#home-container {
+	background-color: #C7D8C6;
+}
+
 
 
 //#A9B7C0 Gre Blue
