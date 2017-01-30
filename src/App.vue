@@ -2,15 +2,7 @@
 
 	<div id="main" class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
 		<appHeader></appHeader>
-		<div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title">Title</span>
-	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="">Home</a>
-        <a class="mdl-navigation__link" href="">Photo</a>
-        <a class="mdl-navigation__link" href="">Portfolio</a>
-	    </nav>
-	  </div>
-
+		<appHeaderDrawer></appHeaderDrawer>
 	  <main class="mdl-layout__content">
 	  	<router-view></router-view>
 	  </main>
@@ -20,13 +12,14 @@
 
 <script>
 	import Header from './components/Header.vue';
+	import HeaderDrawer from './components/HeaderDrawer.vue';
+
 	export default {
 		components: {
-			appHeader: Header
+			appHeader: Header,
+			appHeaderDrawer: HeaderDrawer
 		}
 	}
 </script>
 
-<style>
-
-</style>
+<style src="./styles/styles.scss" lang="scss"></style>

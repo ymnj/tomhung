@@ -1,29 +1,21 @@
 <template>
-	<div>
 		<header class="mdl-layout__header mdl-layout__header--transparent">
-	    <div class="mdl-layout-icon">dasdsadas</div>
+	    <div class="mdl-layout-icon"></div>
 	    <div class="mdl-layout__header-row">
 	      <!-- Title -->
-	      <span class="mdl-layout-title mdl-color-text--grey-900">TOM HUNG</span>
+	      <span class="mdl-layout-title mdl-color-text--grey-900">
+	      <img id="logo" src="../../src/assets/logo.png">	TOM HUNG
+	      </span>
 	      <!-- Add spacer, to align navigation to the right -->
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation -->
 	      <nav class="mdl-navigation">
-	        <a class="mdl-navigation__link mdl-color-text--grey-900" href="">Home</a>
-	        <a class="mdl-navigation__link mdl-color-text--grey-900" href="">Photo</a>
-	        <a class="mdl-navigation__link mdl-color-text--grey-900" href="">Portfolio</a>
+	        <router-link class="mdl-navigation__link mdl-color-text--grey-900" to="/">Home</router-link>
+	       	<router-link class="mdl-navigation__link mdl-color-text--grey-900" to="/photos">Photos</router-link>
+	        <router-link class="mdl-navigation__link mdl-color-text--grey-900" to="/portfolio">Portfolio</router-link>
 	      </nav>
 	    </div>
 	  </header>
-	  <div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title">Title</span>
-	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="">Home</a>
-	      <a class="mdl-navigation__link" href="">Photo</a>
-	      <a class="mdl-navigation__link" href="">Portfolio</a>
-	    </nav>
-	  </div>
-	</div>
 </template>
 
 <script></script>
