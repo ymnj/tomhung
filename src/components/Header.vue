@@ -5,7 +5,7 @@
 	      <!-- Title -->
 	      <span class="mdl-layout-title mdl-color-text--grey-900">
 	      	<router-link class="mdl-navigation__link mdl-color-text--grey-900" to="/" exact>
-						<img id="logo" src="../../src/assets/TH02.png">
+						<img id="logo" src="../../src/assets/TH03.png">
 	      	</router-link>
 	      </span>
 	      <!-- Add spacer, to align navigation to the right -->
@@ -20,4 +20,6 @@
 	  </header>
 </template>
 
-<script></script>
+<script>
+
+</script>

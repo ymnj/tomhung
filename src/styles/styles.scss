@@ -1,5 +1,5 @@
+
 body {
-  // background-color: #A9B7C0;
   background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,31 +12,18 @@ body {
 $dark-color: #212121;
 $active-color: #ff4081;
 
-
-
 #main {
+
 	.mdl-layout__header-row {
   	width: 80%;
   	margin: 5% auto 0;
 		padding: 0;
 	}
 
-	.mdl-layout__content{
-		@media (max-width: 1024px) {
-		  margin-top: 116px;
-		}
-	}
-
 	.mdl-layout-title a {
 		padding: 0;
 	}
 
-	.mdl-layout__content {
-		top: 20%;
-		margin-left: auto;
-		margin-right: auto;
-		width: 80%;
-	}
 }
 
 #logo {
@@ -86,10 +73,17 @@ nav {
 
 /******************************* HOME *******************************/
 
-
 #home-container {
 
-	max-width: 100%;
+	padding-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	
+
+	@media (max-width: 1024px) {
+		margin-top: 116px;
+	}	
 
 	h1 {
 		margin: 0;
@@ -102,8 +96,11 @@ nav {
 	}
 
 	#icons {
+
+		padding-top: 15px;
+
 		a {
-			margin: 0 12px;
+			margin: 12px;
 		}
 		a:first-child {
 			margin-left: 8px;
@@ -120,13 +117,14 @@ nav {
 	}
 
 	@media (max-width: 400px){
-		#icons > a:first-child {
-			margin-left: 2px;
+		#icons {
+			a:first-child {
+				margin-left: 2px;
+			} 
 		}	
 	}
 
 }
-
 
 
 //#A9B7C0 Gre Blue
