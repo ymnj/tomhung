@@ -1,5 +1,5 @@
 <template>
-		<header class="mdl-layout__header mdl-layout__header--transparent">
+		<header class="mdl-layout__header mdl-layout__header--scroll">
 	    <div class="mdl-layout-icon"></div>
 	    <div class="mdl-layout__header-row">
 	      <!-- Title -->

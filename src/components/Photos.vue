@@ -3,7 +3,9 @@
 		<h1>This is Photos</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatibus commodi asperiores maxime pariatur dolore at fugiat 
 		voluptatem repellendus ad. Porro odio sunt ipsa incidunt vel, ipsum amet animi sint.</p>
-		<div v-html="obj"></div>
+		<ul>
+			<li></li>
+		</ul>
 	</div>
 </template>
 
@@ -19,28 +21,29 @@ cloudinary.config({
 });
 
 //cloudinary.url("asia", {format: "json", type: "list" })
-
-
 // console.log(cloudinary)
 
 export default {
 	data() {
 		return {
-			img: cloudinary.image("asia/050611_087.jpg", { folder: 'asia/'}),
-			obj: ""
+			images: []
 		}
 	},
 	methods: {
 		getImg() {
 
-			let url = cloudinary.url('asia', {format: 'json', type: 'list'});;
-			console.log(url);
+			let url = cloudinary.url('asia', {format: 'json', type: 'list'});
+			// this.test = cloudinary.image("asia/050611_087.jpg", { quality: 70 });
 
 			axios.get('http://res.cloudinary.com/tomhung/image/list/asia.json')
 				.then((res) => {
-					console.log(res);
-					this.obj = cloudinary.image("asia/050611_087.jpg", { quality: 70 });
-					console.log(res.data.resources[0]);
+					this.images = res.data.resources.map(item => {
+						let id = item.public_id;
+						return (function(){
+							return cloudinary.image(id, { quality: 70 });
+						})(id)
+					})
+					console.log(this.images);
 				}).catch((err) => {
 					console.log(err)
 				})
