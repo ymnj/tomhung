@@ -3,7 +3,7 @@
 	<div id="main" class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
 		<appHeader></appHeader>
 		<appHeaderDrawer></appHeaderDrawer>
-			  <main class="mdl-layout__content">
+		<main class="mdl-layout__content">
 	  	<router-view></router-view>
 	  </main>
 	</div>

@@ -44,8 +44,55 @@
 	}
 </script>
 
+<style lang="scss">
+	/******************************* HOME *******************************/
 
-<!-- <a href="http://www.linkedin.com/in/tomhungyvr" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-							<a href="https://github.com/ymnj" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-							<a href="https://plus.google.com/u/1/103585423442230985484/about" target="_blank"><i class="fa fa-google-plus"></i></a>
-							<a href="https://www.instagram.com/ym.nj/" target="_blank"><i class="fa fa-instagram"></i></a> -->
+#home-container {
+
+	padding-top: 10%;
+
+	@media (max-width: 1024px) {
+		margin-top: 116px;
+	}	
+
+	h1 {
+		margin: 0;
+		font-weight: lighter;
+	}
+	
+	h1.name {
+		letter-spacing: 0.4em;
+		font-weight: bold;
+	}
+
+	#icons {
+
+		padding-top: 15px;
+
+		a {
+			margin: 12px;
+		}
+		a:first-child {
+			margin-left: 8px;
+		}
+		i {
+			font-size: 1.5em;
+		}
+	}
+
+	@media (max-width: 615px) {
+		#banner h1{
+			font-size: 9vw;
+		}
+	}
+
+	@media (max-width: 400px){
+		#icons {
+			a:first-child {
+				margin-left: 2px;
+			} 
+		}	
+	}
+
+}
+</style>

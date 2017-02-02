@@ -1,10 +1,15 @@
 <template>
-	<div>
+	<div id="photo-container">
 		<h1>This is Photos</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatibus commodi asperiores maxime pariatur dolore at fugiat 
 		voluptatem repellendus ad. Porro odio sunt ipsa incidunt vel, ipsum amet animi sint.</p>
+		<button @click="getImg('asia')">Asia</button>
+		<button @click="getImg('tofino')">Tofino</button>
 		<ul>
-			<li></li>
+			<li v-for="cover in albumCovers"><img :src="cover.url"></li>
+		</ul>
+		<ul>
+			<li v-for="image in images"><img :src="image"></li>
 		</ul>
 	</div>
 </template>
@@ -26,164 +31,58 @@ cloudinary.config({
 export default {
 	data() {
 		return {
+			albumSelected: false,
+			albumCovers: [
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_100/v1/asia/050611_087"
+				},
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_100/v1/tofino/FUJI1158_deslkk"
+				}
+			],
 			images: []
 		}
 	},
 	methods: {
-		getImg() {
-
-			let url = cloudinary.url('asia', {format: 'json', type: 'list'});
-			// this.test = cloudinary.image("asia/050611_087.jpg", { quality: 70 });
-
-			axios.get('http://res.cloudinary.com/tomhung/image/list/asia.json')
+		getImg(album) {
+			let url = cloudinary.url(album, {format: 'json', type: 'list'});
+			console.log('second', album);
+			axios.get(`http://res.cloudinary.com/tomhung/image/list/${album}.json`)
 				.then((res) => {
 					this.images = res.data.resources.map(item => {
 						let id = item.public_id;
 						return (function(){
-							return cloudinary.image(id, { quality: 70 });
+							return cloudinary.url(id, { quality: 100 });
 						})(id)
-					})
-					console.log(this.images);
+					});
 				}).catch((err) => {
 					console.log(err)
 				})
 		}
-	},
-	mounted() {
-		this.getImg();
 	}
 }
-
-// {
-//     "resources": [
-//         {
-//             "public_id": "asia/050611_087",
-//             "version": 1485860097,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:57Z"
-//         },
-//         {
-//             "public_id": "asia/Taiwan_050611_147",
-//             "version": 1485860097,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:57Z"
-//         },
-//         {
-//             "public_id": "asia/052910_048",
-//             "version": 1485860096,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:56Z"
-//         },
-//         {
-//             "public_id": "asia/052910_053",
-//             "version": 1485860096,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:56Z"
-//         },
-//         {
-//             "public_id": "asia/052910_085",
-//             "version": 1485860096,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:56Z"
-//         },
-//         {
-//             "public_id": "asia/Taiwan_050611_162",
-//             "version": 1485860095,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:55Z"
-//         },
-//         {
-//             "public_id": "asia/Taiwan_050611_169",
-//             "version": 1485860095,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:55Z"
-//         },
-//         {
-//             "public_id": "asia/Taiwan_050611_067",
-//             "version": 1485860095,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:55Z"
-//         },
-//         {
-//             "public_id": "asia/Taiwan_050611_077",
-//             "version": 1485860095,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:55Z"
-//         },
-//         {
-//             "public_id": "asia/052910_076",
-//             "version": 1485860095,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:55Z"
-//         },
-//         {
-//             "public_id": "asia/061010_104",
-//             "version": 1485860094,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:54Z"
-//         },
-//         {
-//             "public_id": "asia/052910_056",
-//             "version": 1485860094,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:54Z"
-//         },
-//         {
-//             "public_id": "asia/061010_111",
-//             "version": 1485860094,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:54Z"
-//         },
-//         {
-//             "public_id": "asia/052910_054",
-//             "version": 1485860095,
-//             "format": "jpg",
-//             "width": 1000,
-//             "height": 669,
-//             "type": "upload",
-//             "created_at": "2017-01-31T10:54:55Z"
-//         }
-//     ],
-//     "updated_at": "2017-02-01T19:51:05Z"
-// }
-
 </script>
+
+<style lang="scss">
+	#photo-container {
+		background-color: red;
+		
+		ul {
+			padding: 0;
+
+			li {
+				width: 100%;
+			}
+			
+			img {
+				width: 50%;
+			}
+		}
+
+
+	}
+</style>
