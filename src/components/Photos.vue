@@ -1,15 +1,14 @@
 <template>
-	<div id="photo-container">
+	<div id="photos-container">
 		<h1>This is Photos</h1>
+		<button @click="navigateTo('asia')">Asia</button>
+		<button @click="navigateTo('tofino')">Tofino</button>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatibus commodi asperiores maxime pariatur dolore at fugiat 
 		voluptatem repellendus ad. Porro odio sunt ipsa incidunt vel, ipsum amet animi sint.</p>
 		<button @click="getImg('asia')">Asia</button>
 		<button @click="getImg('tofino')">Tofino</button>
 		<ul>
 			<li v-for="cover in albumCovers"><img :src="cover.url"></li>
-		</ul>
-		<ul>
-			<li v-for="image in images"><img :src="image"></li>
 		</ul>
 	</div>
 </template>
@@ -48,6 +47,10 @@ export default {
 		}
 	},
 	methods: {
+		navigateTo(album) {
+			this.$router.push(`/photos/${album}`);
+		},
+
 		getImg(album) {
 			let url = cloudinary.url(album, {format: 'json', type: 'list'});
 			console.log('second', album);
@@ -68,7 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-	#photo-container {
+	#photos-container {
 		background-color: red;
 		
 		ul {
