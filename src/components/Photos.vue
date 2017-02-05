@@ -1,14 +1,12 @@
 <template>
 	<div id="photos-container">
-		<h1>This is Photos</h1>
-		<button @click="navigateTo('asia')">Asia</button>
-		<button @click="navigateTo('tofino')">Tofino</button>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatibus commodi asperiores maxime pariatur dolore at fugiat 
-		voluptatem repellendus ad. Porro odio sunt ipsa incidunt vel, ipsum amet animi sint.</p>
-		<button @click="getImg('asia')">Asia</button>
-		<button @click="getImg('tofino')">Tofino</button>
+		<header>
+			<h1>Photography</h1>
+			<p>Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so my hobby never took off. Many years later with the introduction of mirrorless cameras, I can now happily shoot with my considerably smaller Fujifilm X100T. It's the perfect camera for inconspicuous street photography 
+			and easily carried on any trip. I don't shoot as often as I like but I will try to keep this page updated with more photos.</p>
+		</header>
 		<ul>
-			<li v-for="cover in albumCovers"><img :src="cover.url"></li>
+			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)"  :src="cover.url"></li>
 		</ul>
 	</div>
 </template>
@@ -35,43 +33,39 @@ export default {
 	methods: {
 		navigateTo(album) {
 			this.$router.push(`/photos/${album}`);
-<<<<<<< HEAD
-=======
-		},
-
-		getImg(album) {
-			let url = cloudinary.url(album, {format: 'json', type: 'list'});
-			console.log('second', album);
-			axios.get(`http://res.cloudinary.com/tomhung/image/list/${album}.json`)
-				.then((res) => {
-					this.images = res.data.resources.map(item => {
-						let id = item.public_id;
-						return (function(){
-							return cloudinary.url(id, { quality: 100 });
-						})(id)
-					});
-				}).catch((err) => {
-					console.log(err)
-				})
->>>>>>> a442dc83329f3845503febf1d976361d41add41b
 		}
 	}
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	#photos-container {
 		background-color: red;
+
+		header {
+			h1 {
+				text-align: center;
+			}
+
+			p {
+				max-width: 500px;
+				@media screen and (max-width: 500px) {
+				font-size: 0.9em;	
+				}
+				margin: 0 auto;
+			}
+		}
 		
 		ul {
 			padding: 0;
-
-			li {
+			display: flex;
+			
+			img {
 				width: 100%;
 			}
 			
-			img {
-				width: 50%;
+			@media only screen  and (max-width : 926px) {
+				flex-direction: column;
 			}
 		}
 
