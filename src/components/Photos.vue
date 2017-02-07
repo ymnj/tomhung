@@ -6,7 +6,7 @@
 			and easily carried on any trip. I don't shoot as often as I like but I will try to keep this page updated with more photos.</p>
 		</header>
 		<ul>
-			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)"  :src="cover.url"></li>
+			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)" :src="cover.url"></li>
 		</ul>
 	</div>
 </template>
@@ -39,6 +39,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+	body {
+		background: red;
+	}
+
 	#photos-container {
 		background-color: red;
 

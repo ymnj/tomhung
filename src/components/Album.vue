@@ -1,10 +1,13 @@
 <template>
 	<div id="album-container">
 		<button @click="backToPhotos">Back to Photos</button>
-		{{ album }}
-		<ul>
-			<li v-for="image in images"><img :src="image"></li>
-		</ul>
+		
+		<div class="image-flex-wrap">
+			<div class="image-cell" v-for="image in images">
+				<img :src="image">
+			</div>
+		</div>
+		
 	</div>
 </template>
 
@@ -19,13 +22,11 @@ cloudinary.config({
   "api_secret": config.SECRET
 });
 
-//cloudinary.url("asia", {format: "json", type: "list" })
-// console.log(cloudinary)
-
 export default {
 	data() {
 		return {
 			album: this.$route.params.album,
+			loading: true,
 			images: []
 		}
 	},
@@ -36,42 +37,61 @@ export default {
 
 		getImg() {
 			let url = cloudinary.url(this.album, {format: 'json', type: 'list'});
-		
+
+			//Cloudinary.url cannot return JSON of all photos in an album. Must manually tag photos for tag search through Cloudinary.url
+
 			axios.get(`http://res.cloudinary.com/tomhung/image/list/${this.album}.json`)
 				.then((res) => {
 					this.images = res.data.resources.map(item => {
 						let id = item.public_id;
 						return (function(){
 							return cloudinary.url(id, { quality: 100 });
-						})(id)
+						})(id);
 					});
+					this.loading = false;
 				}).catch((err) => {
 					console.log(err)
 				})
 		}
 	},
 	mounted() {
+		this.loading = true;
 		this.getImg();
 	}
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+	
+	body {
+		background-image: none;
+	}
+
 	#album-container {
-		background-color: red;
 		
-		ul {
-			padding: 0;
-
-			li {
-				width: 100%;
-			}
-			
-			img {
-				width: 50%;
-			}
+		.image-flex-wrap {
+			background-color: red;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;background-color: red;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between; 
 		}
+		
+		.image-cell {
 
+			width: 48%;
+			height: auto;
+			margin-bottom: 4%;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+		}
+	
 
 	}
 </style>
