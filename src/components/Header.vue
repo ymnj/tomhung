@@ -39,7 +39,9 @@ export default {
 		}
 	},
 	mounted() {
-
+		if(this.$route.path === '/photos/asia'){
+			this.requireLightText = !this.requireLightText;
+		};
 	}
 }
 </script>
