@@ -1,7 +1,7 @@
 <template>
 
 	<div id="main" class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
-		<appHeader></appHeader>
+		<appHeader :light=""></appHeader>
 		<appHeaderDrawer></appHeaderDrawer>
 		<main class="mdl-layout__content">
 	  	<router-view></router-view>
@@ -47,23 +47,21 @@
 			background: url('assets/transparent.svg') center / cover;
 		}
 	
-		.mdl-layout__content {
-			z-index: 0;
-			position: relative;
-			margin-top: -64px;
-
-		}
-
 		.mdl-layout__header-row {
 	  	width: 80%;
 	  	margin: 0 auto;
-			padding: 0;
+			padding: 64px 0 0;
 		}
 
 		.mdl-layout-title a {
 			padding: 0;
 		}
 
+		.mdl-layout__content {
+			z-index: 0;
+			position: relative;
+			margin-top: -64px;
+		}
 	}
 
 	#logo {

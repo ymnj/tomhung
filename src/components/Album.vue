@@ -1,7 +1,15 @@
 <template>
 	<div id="album-container">
-		<button @click="backToPhotos">Back to Photos</button>
 		
+		<div class="cover-image"></div>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus itaque natus totam perspiciatis temporibus blanditiis quo quia libero. Ipsum perspiciatis quisquam atque soluta quae hic, velit asperiores corporis officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 		<div class="image-flex-wrap">
 			<div class="image-cell" v-for="image in images">
 				<img :src="image">
@@ -53,10 +61,6 @@ export default {
 					console.log(err)
 				})
 		}
-	},
-	mounted() {
-		this.loading = true;
-		this.getImg();
 	}
 }
 </script>
@@ -64,8 +68,14 @@ export default {
 <style lang="scss" scoped>
 
 	#album-container {
+
+		background-color: salmon;
 		
-		background-color: #fff;
+		.cover-image {
+			background: url('http://res.cloudinary.com/tomhung/image/upload/q_60/v1486438922/asia/Taiwan_050611_147') #fff no-repeat center;
+			background-size: cover;
+			height: 100vh;
+		}
 
 		.image-flex-wrap {
 			display: flex;
@@ -76,6 +86,17 @@ export default {
 			justify-content: space-between; 
 		}
 		
+		p {
+			max-width: 600px;
+			font-size: 1.4em;
+			letter-spacing: 1px;
+			margin:  auto;
+			
+			@media screen and (max-width: 500px) {
+			font-size: 1em;	
+			}
+		}
+
 		.image-cell {
 
 			width: 48%;
@@ -86,9 +107,6 @@ export default {
 				width: 100%;
 				height: 100%;
 			}
-
 		}
-	
-
 	}
 </style>

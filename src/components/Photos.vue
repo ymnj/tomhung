@@ -37,6 +37,10 @@ export default {
 }
 </script>
 
+<style lang="scss">
+
+</style>
+
 <style lang="scss" scoped>
 
 	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
@@ -55,7 +59,6 @@ export default {
 			h1 {
 				text-align: center;
 				margin-top: 0;
-				margin-bottom: 4%;
 				font-family: $font;
 				font-weight: 600;
 				font-size: 4.5em;
@@ -63,6 +66,7 @@ export default {
 
 			p {
 				max-width: 600px;
+				padding: 5% 0;
 				font-size: 1.4em;
 				letter-spacing: 1px;
 				
@@ -71,13 +75,12 @@ export default {
 				}
 			
 			margin: 0 auto;
-			
+
 			}
 
 		}
 		
 		ul {
-			margin: 5% 0 0 0;
 			padding: 0;
 			display: flex;
 			
