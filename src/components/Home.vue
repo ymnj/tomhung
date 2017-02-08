@@ -49,11 +49,16 @@
 
 #home-container {
 
-	padding-top: 10%;
+	width: 100%;
+	height: 100%;
+	padding: 40vh 0 0 10%;
 
-	@media (max-width: 1024px) {
-		margin-top: 116px;
-	}	
+	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: right;
 
 	h1 {
 		margin: 0;

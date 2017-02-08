@@ -40,16 +40,17 @@ export default {
 
 <style lang="scss" scoped>
 
-	body {
-		background: red;
-	}
-
 	#photos-container {
-		background-color: red;
+
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+		background-color: #fff;
 
 		header {
 			h1 {
 				text-align: center;
+				margin: 0;
 			}
 
 			p {
