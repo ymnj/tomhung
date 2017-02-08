@@ -28,46 +28,30 @@
 	$active-color: #ff4081;
 	$red: red;
 
-	// body {
-	// 	background: url("./assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
-	//   -webkit-background-size: cover;
-	//   -moz-background-size: cover;
-	//   -o-background-size: cover;
-	//   background-size: cover;
-	//   background-position: right;
-	// }
+	body {
+		background-color: green;
+	}
 
 	#main {
-	
-		// list-style-type: none;
+		list-style-type: none;
 		
-		// ul {
-		// 	list-style-type: none;
-		// }
-
-		// #home-container, #photos-container, #album-container {
-		// 	margin-left: auto;
-		// 	margin-right: auto;
-		// 	width: 80%;
-		// }
+		h1 {
+			margin: 0;
+		}
+		ul {
+			list-style-type: none;
+		}
 
 		.mdl-layout__header {
 			z-index: 1;
 			background: url('assets/transparent.svg') center / cover;
 		}
-
-		.mdl-layout__header, .mdl-layout__drawer-button {
-		  /* This background is dark, so we set text to white. Use 87% black instead if
-		     your background is light. */
-		  color: black;
-		}
 	
 		.mdl-layout__content {
 			z-index: 0;
-			height: 100%;
 			position: relative;
-			top: -64px;
-			margin-bottom: -64px;
+			margin-top: -64px;
+
 		}
 
 		.mdl-layout__header-row {

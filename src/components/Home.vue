@@ -50,7 +50,7 @@
 #home-container {
 
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	padding: 40vh 0 0 10%;
 
 	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
@@ -61,7 +61,6 @@
   background-position: right;
 
 	h1 {
-		margin: 0;
 		font-weight: lighter;
 	}
 	

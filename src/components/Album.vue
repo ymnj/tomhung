@@ -45,7 +45,7 @@ export default {
 					this.images = res.data.resources.map(item => {
 						let id = item.public_id;
 						return (function(){
-							return cloudinary.url(id, { quality: 100 });
+							return cloudinary.url(id, { quality: 1 });
 						})(id);
 					});
 					this.loading = false;
@@ -62,18 +62,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	
-	body {
-		background-image: none;
-	}
 
 	#album-container {
 		
+		background-color: #fff;
+
 		.image-flex-wrap {
-			background-color: red;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;background-color: red;
+			justify-content: space-between;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between; 
