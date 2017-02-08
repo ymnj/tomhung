@@ -24,18 +24,22 @@
 export default {
 	data() {
 		return {
-			requireLightText: false
+			requireLightText: null
 		}
 	},
 	watch: {
 		'$route'(to, from) {
-			if(to.path === '/photos/asia'){
-				this.requireLightText = true;
+			if(to.path === '/photos/asia' || from.path === '/photos/asia'){
+				this.requireLightText = !this.requireLightText;
 			}
+
+			// if(from.path === '/photos/asia'){
+			// 	this.requireLightText = !this.requireLightText;
+			// }
 		}
 	},
 	mounted() {
-	
+
 	}
 }
 </script>
