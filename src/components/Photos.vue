@@ -26,6 +26,56 @@ export default {
 				title: "tofino",
 				description: "Here are some temp words",
 				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				},
+				{
+				title: "asia",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
 				}
 			]
 		}
@@ -48,12 +98,12 @@ export default {
 	$font: 'Ek Mukta', sans-serif;
 
 	#photos-container {
-		background-color: salmon;
+		background-color: steelblue;
 		font-family: $font;
 		padding-top: 100px;
 
-		@media screen and (max-width: 1025px) {
-			margin-top: 56.6px;	
+		@media only screen and (max-width : 1024px) {
+			padding-top: 164px;
 		}
 
 		header {
@@ -67,14 +117,14 @@ export default {
 
 			p {
 				max-width: 600px;
-				padding: 5% 0;
+				padding: 5% 7%;
 				font-size: 1.4em;
 				letter-spacing: 1px;
 				
-				@media screen and (max-width: 500px) {
-				font-size: 1em;	
+				@media only screen and (max-width : 926px) {
+					font-size: 1.2em;
 				}
-			
+
 			margin: 0 auto;
 
 			}
@@ -84,6 +134,7 @@ export default {
 		ul {
 			padding: 0;
 			display: flex;
+			flex-wrap: wrap;
 			
 			li {
 				width: 50%;
@@ -95,7 +146,9 @@ export default {
 			
 			@media only screen  and (max-width : 926px) {
 				flex-direction: column;
-
+				li {
+					width: 100%;
+				}
 			}
 		}
 

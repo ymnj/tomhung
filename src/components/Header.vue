@@ -32,10 +32,6 @@ export default {
 			if(to.path === '/photos/asia' || from.path === '/photos/asia'){
 				this.requireLightText = !this.requireLightText;
 			}
-
-			// if(from.path === '/photos/asia'){
-			// 	this.requireLightText = !this.requireLightText;
-			// }
 		}
 	},
 	mounted() {
@@ -101,7 +97,7 @@ export default {
 	}
 
 		#logo {
-			height: 100px;
+			-webkit-filter: invert(100%);
 		}
 	}
 </style>

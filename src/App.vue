@@ -18,6 +18,12 @@
 		components: {
 			appHeader: Header,
 			appHeaderDrawer: HeaderDrawer
+		},
+		watch: {
+			$route() {
+				document.getElementById('main').scrollTop = 0;
+				console.log('changed');
+			}
 		}
 	}
 
@@ -27,20 +33,21 @@
 
 	body {
 		background-color: green;
-	}
+		}
 
 	#main {
 		list-style-type: none;
-		
+
 		h1 {
 			margin: 0;
 		}
 		ul {
 			list-style-type: none;
+			margin: 0;
 		}
 
 		.mdl-layout__header {
-			z-index: 1;
+			//z-index: 1;
 			background: url('assets/transparent.svg') center / cover;
 		}
 	
@@ -55,10 +62,9 @@
 		}
 
 		.mdl-layout__content {
-			z-index: 0;
-			position: relative;
+			//z-index: 0;
 			margin-top: -64px;
-		}
+		};
 	}
 
 

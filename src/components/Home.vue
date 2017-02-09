@@ -51,7 +51,6 @@
 
 	width: 100%;
 	height: 100vh;
-	padding: 40vh 0 0 10%;
 
 	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -59,6 +58,10 @@
   -o-background-size: cover;
   background-size: cover;
   background-position: right;
+
+  #banner {
+  	padding: 40vh 0 0 10%;
+  }
 
 	h1 {
 		font-weight: lighter;
@@ -82,6 +85,10 @@
 		i {
 			font-size: 1.5em;
 		}
+	}
+
+	@media (max-width: 1024px){
+		margin-top: 64px;
 	}
 
 	@media (max-width: 615px) {
