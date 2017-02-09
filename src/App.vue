@@ -22,7 +22,6 @@
 		watch: {
 			$route() {
 				document.getElementById('main').scrollTop = 0;
-				console.log('changed');
 			}
 		}
 	}

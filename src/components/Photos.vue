@@ -26,56 +26,6 @@ export default {
 				title: "tofino",
 				description: "Here are some temp words",
 				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
 				}
 			]
 		}
