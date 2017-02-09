@@ -49,7 +49,7 @@
 
 #home-container {
 
-	width: 100%;
+	background-color: steelblue;
 	height: 100vh;
 
 	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
@@ -85,10 +85,6 @@
 		i {
 			font-size: 1.5em;
 		}
-	}
-
-	@media (max-width: 1024px){
-		margin-top: 64px;
 	}
 
 	@media (max-width: 615px) {

@@ -1,14 +1,17 @@
 <template>
-	<div id="photos-container">
-		<header>
 
+
+	<div id="photos-container">
+
+		HELLO
+		<!-- <header>
 			<h1>Photography</h1>
 			<p>Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so my hobby never took off. Many years later with the introduction of mirrorless cameras, I can now happily shoot with my considerably smaller Fujifilm X100T. It's great for inconspicuous street photography and easily carried on any trip. </p>
 		</header>
 		<ul>
 			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)" :src="cover.url"></li>
 		</ul>
-	</div>
+	</div> -->
 </template>
 
 <script>
@@ -22,6 +25,41 @@ export default {
 				description: "Here are some temp words",
 				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
 				},
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				},
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				}
+				,
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				}
+				,
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				}
+				,
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				}
+				,
+				{
+				title: "tofino",
+				description: "Here are some temp words",
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
+				}
+				,
 				{
 				title: "tofino",
 				description: "Here are some temp words",

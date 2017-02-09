@@ -4,10 +4,10 @@
 		<div class="cover-image">
 			<h1>Asia</h1>
 			<p>Taiwan - Korea - Hong Kong</p>
-			<button class="viewButton" @click="scroll">View></button>
+			<i class="material-icons md-48" @click="scroll">arrow_drop_down_circle</i>
 		</div>
 
-		<section class='intro' id="test2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus itaque natus totam perspiciatis temporibus blanditiis quo quia libero. Ipsum perspiciatis quisquam atque soluta quae hic, velit asperiores corporis officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<section id="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus itaque natus totam perspiciatis temporibus blanditiis quo quia libero. Ipsum perspiciatis quisquam atque soluta quae hic, velit asperiores corporis officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -64,7 +64,7 @@ export default {
 					this.images = res.data.resources.map(item => {
 						let id = item.public_id;
 						return (function(){
-							return cloudinary.url(id, { quality: 1 });
+							return cloudinary.url(id, { quality: 70 });
 						})(id);
 					});
 					this.loading = false;
@@ -73,11 +73,11 @@ export default {
 				})
 		},
 		scroll() {
-			let defaultDuration = 2000;
+			let duration = 1000;
 		  let edgeOffset = 0;
 		  let scrollDiv = document.getElementById("main")
-		  let myScroller = zenscroll.createScroller(scrollDiv, defaultDuration, edgeOffset)
-		  let target = document.getElementById("test2")
+		  let myScroller = zenscroll.createScroller(scrollDiv, duration, edgeOffset)
+		  let target = document.getElementById("intro")
 		  myScroller.to(target);
 		}
 	},
@@ -91,14 +91,19 @@ export default {
  
 	#album-container {
 		background-color: white;
+		font-family: 'Ek Mukta', sans-serif;
+
+		@media (max-width: 1024px){
+			margin-top: 64px;
+		}
 		
 		.cover-image {
-			background: url('http://res.cloudinary.com/tomhung/image/upload/q_60/v1486438922/asia/Taiwan_050611_147') #fff  no-repeat center;
+			background: url('http://res.cloudinary.com/tomhung/image/upload/q_70/v1/asia/050611_001-Edit') #fff  no-repeat center;
 			-webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		  background-size: cover;
-			height: 100vh;
+			min-height: 100vh;
 			display: -webkit-flex;
 		  display: flex;
 		  -webkit-flex-direction: column;
@@ -107,16 +112,21 @@ export default {
 		  align-items: center;
 		  -webkit-justify-content: center;
 		  justify-content: center;
-
 		  color: #fff;
+
+		  h1 {
+		  	font-family: 'Ek Mukta', sans-serif;
+		  	letter-spacing: 2px;
+		  }
 
 			p {
 				max-width: 600px;
+				letter-spacing: 2px;
 			}
 
-			.viewButton {
-				border: 1px solid #fff;
-				padding: 1% 1.5%;
+			.material-icons.md-48 {
+				font-size: 48px;
+				cursor: pointer;
 			}
 
 		}
@@ -128,13 +138,13 @@ export default {
 			justify-content: space-between;
 		}
 		
-		.intro {
+		#intro {
 			max-width: 600px;
 			font-size: 1.4em;
 			letter-spacing: 1px;
 			padding-top: 5%;
 			margin: 0 auto;
-			// margin: 5% auto;
+			line-height: 1.3em;
 			
 			@media screen and (max-width: 500px) {
 			font-size: 1em;	
