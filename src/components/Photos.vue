@@ -78,7 +78,6 @@ export default {
 
 <style lang="scss" scoped>
 
-	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
 	$font: 'Ek Mukta', sans-serif;
 
 	#photos-container {

@@ -1,14 +1,14 @@
 <template>
 	<nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
       <router-link class="brand-logo" to="/" exact>
 				<img id="logo" src="../../src/assets/TH03.png">
     	</router-link>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-          <li><router-link class="grey-text text-darken-4" active-class="is-active" to="/" exact>Home</router-link></li>
-	       	<li><router-link class="grey-text text-darken-4" active-class="is-active" to="/photos">Photos</router-link><li>
-	        <li><router-link class="grey-text text-darken-4" active-class="is-active" to="/projects">Projects</router-link><li>
+          <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
+	       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
+	        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="sass.html">Sass</a></li>
@@ -21,25 +21,25 @@
 </template>
 
 <script>
-// export default {
-// 	data() {
-// 		return {
-// 			requireLightText: null
-// 		}
-// 	},
-// 	watch: {
-// 		'$route'(to, from) {
-// 			if(to.path === '/photos/asia' || from.path === '/photos/asia'){
-// 				this.requireLightText = !this.requireLightText;
-// 			}
-// 		}
-// 	},
-// 	mounted() {
-// 		if(this.$route.path === '/photos/asia'){
-// 			this.requireLightText = !this.requireLightText;
-// 		};
-// 	}
-// }
+export default {
+	data() {
+		return {
+			requireLightText: null
+		}
+	},
+	watch: {
+		'$route'(to, from) {
+			if(to.path === '/photos/asia' || from.path === '/photos/asia'){
+				this.requireLightText = !this.requireLightText;
+			}
+		}
+	},
+	mounted() {
+		if(this.$route.path === '/photos/asia'){
+			this.requireLightText = !this.requireLightText;
+		};
+	}
+}
 </script>
 
 <style lang="scss">
@@ -56,6 +56,7 @@
 	nav {
 		background: url('../assets/transparent.svg') center / cover;
 		min-height: 64px;
+		height: 100%
 	}
 
 	nav {
@@ -63,12 +64,21 @@
 			li a {
 				padding: 0;
 				margin: 0 15px;
+				color: $dark-color;
 			}
-
 			a:hover {
 				background-color: transparent;
 			}
 		}
+		.lightNav {
+			li a {
+				color: #fff;
+			}
+			#logo {
+				filter: invert(100%);
+			}
+		}
+
 		a {
 		  position: relative;
 		}
@@ -93,13 +103,5 @@
 		}
 	}
 
-	// .lightNav {
-	// 	nav a.mdl-navigation__link {
-	// 	color: white;
-	// }
 
-	// 	#logo {
-	// 		-webkit-filter: invert(100%);
-	// 	}
-	// }
 </style>
