@@ -4,13 +4,13 @@
       <router-link class="brand-logo" to="/" exact>
 				<img id="logo" src="../../src/assets/TH03.png">
     	</router-link>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
           <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
 	       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
 	        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
+      <ul class="side-nav" id="mobile">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
         <li><a href="collapsible.html">Javascript</a></li>
@@ -21,6 +21,9 @@
 </template>
 
 <script>
+window.$ = window.jQuery = require('materialize-css/node_modules/jquery/dist/jquery.js'); 
+require('materialize-css');
+
 export default {
 	data() {
 		return {
@@ -35,6 +38,7 @@ export default {
 		}
 	},
 	mounted() {
+		$('.button-collapse').sideNav();
 		if(this.$route.path === '/photos/asia'){
 			this.requireLightText = !this.requireLightText;
 		};
@@ -50,7 +54,7 @@ export default {
 	#logo {
 		width: 40px;
 		height: 40px;
-		margin: 10px 0 0 15px;
+		margin-top: 10px;
 	}
 
 	nav {
@@ -60,46 +64,51 @@ export default {
 	}
 
 	nav {
+		padding-top: 40px;
+
 		.nav-wrapper {
-			li a {
+
+			width: 80%;
+			margin: 0 auto;
+						
+			ul.right {
+				a {
 				padding: 0;
 				margin: 0 15px;
 				color: $dark-color;
-			}
-			a:hover {
-				background-color: transparent;
+			  position: relative;
+				}
+				a:before {
+				  content: "";
+				  position: absolute;
+				  width: 100%;
+				  height: 2px;
+				  bottom: 15px;
+				  left: 0;
+				  background-color: $active-color;
+				  visibility: hidden;
+				  -webkit-transform: scaleX(0);
+				  transform: scaleX(0);
+				  -webkit-transition: all 0.3s ease-in-out 0s;
+				  transition: all 0.3s ease-in-out 0s;
+				}
+				a:hover:before {
+				  visibility: visible;
+				  -webkit-transform: scaleX(1);
+				  transform: scaleX(1);
+				}
+				a:hover {
+					background-color: transparent;
+				}
 			}
 		}
 		.lightNav {
-			li a {
+			.right li a {
 				color: #fff;
 			}
 			#logo {
 				filter: invert(100%);
 			}
-		}
-
-		a {
-		  position: relative;
-		}
-		a:before {
-		  content: "";
-		  position: absolute;
-		  width: 100%;
-		  height: 2px;
-		  bottom: 0;
-		  left: 0;
-		  background-color: $active-color;
-		  visibility: hidden;
-		  -webkit-transform: scaleX(0);
-		  transform: scaleX(0);
-		  -webkit-transition: all 0.3s ease-in-out 0s;
-		  transition: all 0.3s ease-in-out 0s;
-		}
-		a:hover:before {
-		  visibility: visible;
-		  -webkit-transform: scaleX(1);
-		  transform: scaleX(1);
 		}
 	}
 

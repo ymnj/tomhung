@@ -91,7 +91,7 @@ export default {
 <style lang="scss" scoped>
  
 	#album-container {
-		background-color: salmon;
+		background-color: #fff;
 		font-family: 'Ek Mukta', sans-serif;
 		
 		.cover-image {
@@ -111,7 +111,7 @@ export default {
 		  	max-width: 600px;
 		  	margin: 0 auto;
 		  	color: #fff;
-			  letter-spacing: 2px;
+			  letter-spacing: 3px;
 
 				.material-icons.md-48 {
 					font-size: 48px;
@@ -134,7 +134,7 @@ export default {
 			padding-top: 5%;
 			margin: 0 auto;
 			line-height: 1.3em;
-			
+
 			@media screen and (max-width: 500px) {
 			font-size: 1em;	
 			}
@@ -151,5 +151,12 @@ export default {
 				height: 100%;
 			}
 		}
+
+		@media screen and (max-width: 900px) {
+			.image-cell {
+				width: 100%;
+			}
+		}
+
 	}
 </style>

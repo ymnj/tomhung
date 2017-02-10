@@ -75,7 +75,7 @@
 	#icons {
 
 		padding-top: 15px;
-
+		
 		a {
 			margin: 12px;
 		}
@@ -84,6 +84,7 @@
 		}
 		i {
 			font-size: 1.5em;
+			color: #ff4081;
 		}
 	}
 

@@ -81,13 +81,14 @@ export default {
 	$font: 'Ek Mukta', sans-serif;
 
 	#photos-container {
-		background-color: steelblue;
+		background-color: #fff;
 		font-family: $font;
 		padding-top: 100px;
 
 		header {
 			h1 {
 				text-align: center;
+				letter-spacing: 1px;
 				font-family: $font;
 				font-weight: 600;
 				font-size: 4.5em;

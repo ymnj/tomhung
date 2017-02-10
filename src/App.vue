@@ -29,11 +29,7 @@
 		.content-layout {
 			margin-top: -64px;
 		}
-		
-		h1, ul, li {
-			margin: 0;
-			padding: 0;
-		}
+
 	}
 
 
