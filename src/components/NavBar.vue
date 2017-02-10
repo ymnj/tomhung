@@ -74,9 +74,14 @@ export default {
 			ul.right {
 				a {
 				padding: 0;
-				margin: 0 15px;
+				margin: 0 50px;
 				color: $dark-color;
 			  position: relative;
+			  letter-spacing: 2px;
+				}
+
+				a:last-child {
+					margin-right: 0;
 				}
 				a:before {
 				  content: "";
@@ -101,6 +106,10 @@ export default {
 					background-color: transparent;
 				}
 			}
+
+			.material-icons {
+				color: #000;
+			}
 		}
 		.lightNav {
 			.right li a {
@@ -108,6 +117,9 @@ export default {
 			}
 			#logo {
 				filter: invert(100%);
+			}
+			.material-icons {
+				color: #fff;
 			}
 		}
 	}

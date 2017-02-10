@@ -20,15 +20,6 @@
 				<img :src="image">
 			</div>
 		</div>
-
-		<div id="test">hhihhihi
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
 		
 	</div>
 </template>
@@ -38,7 +29,6 @@ import cloudinary from 'cloudinary';
 import config from '../config/cloudinary.json';
 import axios from 'axios';
 import zenscroll from 'zenscroll';
-
 
 cloudinary.config({
   "cloud_name": config.NAME,
@@ -106,10 +96,13 @@ export default {
 			text-align: center;
 
 		  .cover-text {
-		  	position: relative;
-		  	top: 40%;; 
+		  	position: absolute;
+		  	width: 500px;
+		  	margin-left: -250px;
+		  	top: 40%; 
+		  	left: 50%;
 		  	max-width: 600px;
-		  	margin: 0 auto;
+		  	// margin: 0 auto;
 		  	color: #fff;
 			  letter-spacing: 3px;
 
@@ -141,7 +134,6 @@ export default {
 		}
 
 		.image-cell {
-
 			width: 48%;
 			height: auto;
 			margin-bottom: 4%;
@@ -152,11 +144,7 @@ export default {
 			}
 		}
 
-		@media screen and (max-width: 900px) {
-			.image-cell {
-				width: 100%;
-			}
-		}
+		
 
 	}
 </style>

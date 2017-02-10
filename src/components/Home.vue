@@ -60,7 +60,7 @@
   background-position: right;
 
   #banner {
-  	padding: 40vh 0 0 10%;
+  	padding: 35vh 0 0 10%;
   }
 
 	h1 {

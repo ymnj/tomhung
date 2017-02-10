@@ -24,8 +24,6 @@
 	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
 
 	body {
-		background-color: green;
-
 		.content-layout {
 			margin-top: -64px;
 		}

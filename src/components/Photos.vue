@@ -2,10 +2,11 @@
 	<div id="photos-container">
 		<header>
 			<h1>Photography</h1>
-			<p>Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so my hobby never took off. Many years later with the introduction of mirrorless cameras, I can now happily shoot with my considerably smaller Fujifilm X100T. It's great for inconspicuous street photography and easily carried on any trip. </p>
+			<p>Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so the hobby never took off. 
+			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
 		<ul>
-			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)" :src="cover.url"></li>
+			<li v-for="cover in albumCovers"><img class="test" @click="navigateTo(cover.title)" :src="cover.url"></li>
 		</ul>
 	</div>
 </template>
@@ -19,7 +20,7 @@ export default {
 				{
 				title: "asia",
 				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1486438922/asia/Taiwan_050611_147"
+				url: "http://res.cloudinary.com/tomhung/image/upload/q_60/v1486438922/asia/Taiwan_050611_147"
 				},
 				{
 				title: "tofino",
@@ -81,9 +82,9 @@ export default {
 	$font: 'Ek Mukta', sans-serif;
 
 	#photos-container {
-		background-color: #fff;
 		font-family: $font;
-		padding-top: 100px;
+		padding: 100px 10% 0;
+		background-color: #fff;
 
 		header {
 			h1 {
@@ -126,7 +127,14 @@ export default {
 
 			img {
 				width: 100%;
+				position: relative;
 				display: block;
+			}
+
+			img:hover {
+			    opacity: 0.9;
+			    cursor: pointer;
+			    filter: alpha(opacity=50); /* For IE8 and earlier */
 			}
 			
 			@media only screen  and (max-width : 926px) {
