@@ -49,7 +49,7 @@
 
 #home-container {
 
-	background-color: steelblue;
+	background-color: #fff;
 	height: 100vh;
 
 	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
@@ -57,7 +57,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: right;
 
   #banner {
   	padding: 35vh 0 0 10%;

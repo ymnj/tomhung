@@ -8,13 +8,12 @@
       <ul class="right hide-on-med-and-down">
           <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
 	       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
-	        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
+	        <li><router-link active-class="is-active" to="/code">Code</router-link><li>
       </ul>
       <ul class="side-nav" id="mobile">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
+       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
+        <li><router-link active-class="is-active" to="/code">Code</router-link><li>
       </ul>
     </div>
   </nav>

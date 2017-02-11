@@ -26,41 +26,6 @@ export default {
 				title: "tofino",
 				description: "Here are some temp words",
 				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				},
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				}
-				,
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				}
-				,
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				}
-				,
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				}
-				,
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				}
-				,
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
 				}
 			]
 		}

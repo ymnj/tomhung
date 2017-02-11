@@ -27,7 +27,6 @@
 		.content-layout {
 			margin-top: -64px;
 		}
-
 	}
 
 
