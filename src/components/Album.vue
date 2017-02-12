@@ -2,7 +2,7 @@
 	<div id="album-container">
 		<div class="cover-image">
 			<div class="cover-text">
-				<h1>Asia</h1>
+				<h1>{{ album }}</h1>
 				<p>Taiwan - Korea - Hong Kong</p>
 				<i class="material-icons md-48" @click="scroll">arrow_drop_down_circle</i>
 			</div>
@@ -30,6 +30,11 @@ import config from '../config/cloudinary.json';
 import axios from 'axios';
 import zenscroll from 'zenscroll';
 
+import albums from '../albums/albums.js';
+
+console.log(albums.asia.title);
+console.log(albums.tofino.intro)
+
 cloudinary.config({
   "cloud_name": config.NAME,
   "api_key": config.KEY,
@@ -40,7 +45,7 @@ export default {
 	data() {
 		return {
 			album: this.$route.params.album,
-			loading: true,
+			albumInfo: {},
 			images: []
 		}
 	},
@@ -70,10 +75,15 @@ export default {
 		  let myScroller = zenscroll.createScroller(scrollDiv, duration, edgeOffset)
 		  let target = document.getElementById("intro")
 		  myScroller.to(target);
-		}
+		},
+		infoSetup(album){
+			albumInfo = `albums.${album}`;
+		}	
 	},
 	mounted() {
+		this.infoSetup(this.album);
 		this.getImg();
+
 	}
 }
 </script>
