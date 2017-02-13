@@ -6,28 +6,20 @@
 			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
 		<ul>
-			<li v-for="cover in albumCovers"><img class="test" @click="navigateTo(cover.title)" :src="cover.url"></li>
+			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)" :src="cover.imgUrl"></li>
 		</ul>
 	</div>
 </template>
 
 <script>
 
+import albums from '../albums/albums.js';
+
+
 export default {
 	data() {
 		return {
-			albumCovers: [
-				{
-				title: "asia",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_60/v1486438922/asia/Taiwan_050611_147"
-				},
-				{
-				title: "tofino",
-				description: "Here are some temp words",
-				url: "http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk"
-				}
-			]
+			albumCovers: albums
 		}
 	},
 	methods: {

@@ -1,19 +1,14 @@
 <template>
 	<div id="album-container">
-		<div class="cover-image">
+		<div class="cover-image" :style="backgroundImage">
 			<div class="cover-text">
-				<h1>{{ album }}</h1>
-				<p>Taiwan - Korea - Hong Kong</p>
+				<h1>{{ albumInfo.title | capitalize }}</h1>
+				<p>{{ albumInfo.tagLine }}</p>
 				<i class="material-icons md-48" @click="scroll">arrow_drop_down_circle</i>
 			</div>
 		</div>
 
-		<section id="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptatibus itaque natus totam perspiciatis temporibus blanditiis quo quia libero. Ipsum perspiciatis quisquam atque soluta quae hic, velit asperiores corporis officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+		<section id="intro">{{ albumInfo.intro }}</section>
 
 		<div class="image-flex-wrap">
 			<div class="image-cell" v-for="image in images">
@@ -32,9 +27,6 @@ import zenscroll from 'zenscroll';
 
 import albums from '../albums/albums.js';
 
-console.log(albums.asia.title);
-console.log(albums.tofino.intro)
-
 cloudinary.config({
   "cloud_name": config.NAME,
   "api_key": config.KEY,
@@ -46,10 +38,15 @@ export default {
 		return {
 			album: this.$route.params.album,
 			albumInfo: {},
-			images: []
+			images: [],
+			backgroundImage: ""
 		}
 	},
 	methods: {
+		init() {
+			this.albumInfo = albums[`${this.album}`];
+			this.backgroundImage = `background-image: url(${this.albumInfo.imgUrl})`;
+		},
 		getImg() {
 			let url = cloudinary.url(this.album, {format: 'json', type: 'list'});
 
@@ -60,7 +57,7 @@ export default {
 					this.images = res.data.resources.map(item => {
 						let id = item.public_id;
 						return (function(){
-							return cloudinary.url(id, { quality: 70 });
+							return cloudinary.url(id, { quality: 1 });
 						})(id);
 					});
 					this.loading = false;
@@ -81,7 +78,7 @@ export default {
 		}	
 	},
 	mounted() {
-		this.infoSetup(this.album);
+		this.init();
 		this.getImg();
 
 	}
@@ -95,7 +92,7 @@ export default {
 		font-family: 'Ek Mukta', sans-serif;
 		
 		.cover-image {
-			background: url('http://res.cloudinary.com/tomhung/image/upload/q_70/v1/asia/050611_001-Edit') #fff  no-repeat center center;
+			//background: url('http://res.cloudinary.com/tomhung/image/upload/q_70/v1/asia/050611_001-Edit') #fff  no-repeat center center;
 			-webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
