@@ -1,8 +1,9 @@
 <template>
 	<div id="code-container">
 		<header>
-			<h1>...</h1>
-			<p>Loremds</p>
+			<h1>Code</h1>
+			<p>
+			Here is a selection of some of the projects I have worked on over the past year. If you'd like to see more, please check out my Github.</p>
 		</header>
 
 		<div class="project-wrap">
@@ -67,7 +68,7 @@
 		}
 
 		.project-wrap {
-			margin: 10% 0;
+			margin-bottom: 10%;
 			border: 1px solid black;
 			display: flex;
 

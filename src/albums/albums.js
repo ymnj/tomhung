@@ -15,7 +15,7 @@ module.exports = {
 		title: "tofino",
 		tagLine: "Tofino, B.C",
 		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis beatae, provident excepturi veniam ipsa quaerat hic. Nostrum illo distinctio, dignissimos dicta consectetur at provident cum? Totam, similique voluptatem veniam cum.`,
-		imgUrl: 'http://res.cloudinary.com/tomhung/image/upload/q_1/v1/tofino/FUJI1158_deslkk',
+		imgUrl: 'http://res.cloudinary.com/tomhung/image/upload/q_1/v1487040324/tofino/FUJI1201-Edit.jpg',
 		intro: `Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino Tofino `
 	}
 }

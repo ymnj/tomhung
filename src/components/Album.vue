@@ -45,14 +45,14 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background-image: url(${this.albumInfo.imgUrl})`;
+			this.backgroundImage = `background: url(${this.albumInfo.imgUrl}) #fff no-repeat center center; background-size: cover;`;
 		},
 		getImg() {
 			let url = cloudinary.url(this.album, {format: 'json', type: 'list'});
 
 			//Cloudinary.url cannot return JSON of all photos in an album. Must manually tag photos for tag search through Cloudinary.url
 
-			axios.get(`http://res.cloudinary.com/tomhung/image/list/${this.album}.json`)
+			axios.get(url)
 				.then((res) => {
 					this.images = res.data.resources.map(item => {
 						let id = item.public_id;
@@ -92,7 +92,6 @@ export default {
 		font-family: 'Ek Mukta', sans-serif;
 		
 		.cover-image {
-			//background: url('http://res.cloudinary.com/tomhung/image/upload/q_70/v1/asia/050611_001-Edit') #fff  no-repeat center center;
 			-webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
