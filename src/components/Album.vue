@@ -60,7 +60,6 @@ export default {
 							return cloudinary.url(id, { quality: 1 });
 						})(id);
 					});
-					this.loading = false;
 				}).catch((err) => {
 					console.log(err)
 				})
