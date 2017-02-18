@@ -1,20 +1,23 @@
 <template>
 	<div id="blog-container">
 		<div v-for="post in posts" class="post-wrap">
-			<h2>{{post.title.rendered}}</h2>
-			<p>{{post.content.rendered}}</p>
+			<PostDetail :post="post"></PostDetail>
 		</div>
 	</div>
 </template>
 
 <script>
 	import axios from 'axios';	
+	import PostDetail from './PostDetail.vue';
 
 	export default {
 		data() {
 			return {
 				posts: []
 			}
+		},
+		components: {
+			PostDetail
 		},
 		methods: {
 			getPosts() {
@@ -39,11 +42,12 @@
 <style type="scss">
 	#blog-container {
 		padding: 100px 10% 0;
-		background-color: red;
+		background-color: steelblue;
 		height: 100%;
 	}
 
 	.post-wrap	{
+		background-color: salmon;
 		margin-bottom: 30px;
 	}
 </style>
