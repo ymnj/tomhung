@@ -1,8 +1,9 @@
 <template>
 	<div class="single-post-wrap">
-		<h1 class="title">{{ post.title.rendered }}</h1>
+		<h1 class="title">{{ title }}</h1>
 		<h5 class="date">{{ date }}</h5>
-		<p v-html="content"></p>
+		<p v-html="excerpt"></p>
+<!-- 		<p v-html="content"></p> -->
 	</div>
 </template>
 
@@ -14,7 +15,9 @@
 		props: ['post'],
 		data() {
 			return {
-				date: moment().format("DD MMM YYYY"),
+				title: this.post.title.rendered,
+				date: moment(this.post.date).format("DD MMM YYYY"),
+				excerpt: this.post.excerpt.rendered,
 				content: this.post.content.rendered
 			}
 		}

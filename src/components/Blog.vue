@@ -1,6 +1,14 @@
 <template>
 	<div id="blog-container">
 		<div v-for="post in posts" class="posts-wrap">
+			<div class="featured-image">
+				<img :src="post.better_featured_image.source_url">
+			</div>
+			<!-- <div class="excerpt">
+				<h1>{{ post.title.rendered }}
+				<p>{{ post.excerpt.rendered }}</p>
+			</div> -->
+
 			<PostDetail :post="post"></PostDetail>
 		</div>
 	</div>
@@ -21,15 +29,12 @@
 		},
 		methods: {
 			getPosts() {
-				//GET request for all the current posts. ?per_page=1 to limit response to 1 post.
 
-				let url = 'http://tomhung.ca/api/blog/wp-json/wp/v2/posts/?per_page=2';
+				let url = 'http://localhost/wordpress-cms/wp-json/wp/v2/posts/?per_page=2';
 
 				axios.get(url)
 					.then((posts) => {
 						this.posts = posts.data;
-						console.log(this.posts);
-						
 					})
 					.catch((err) => {
 						console.log(err);
@@ -43,14 +48,27 @@
 </script>
 
 
-<style type="scss">
+<style lang="scss">
 	#blog-container {
-		padding: 100px 10% 0;
+		padding: 200px 20% 0;
 		background-color: steelblue;
 		height: 100%;
 	}
 
 	.posts-wrap	{
-		background-color: salmon;
+			background-color: salmon;
+
+		.featured-image {
+			width: 100%;
+			height: auto;
+			background-color: red;
+
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
 	}
+
 </style>
