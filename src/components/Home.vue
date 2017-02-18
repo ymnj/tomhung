@@ -59,7 +59,7 @@
   background-size: cover;
 
   #banner {
-  	padding: 35vh 0 0 10%;
+  	padding: 30vh 0 0 10%;
   }
 
 	h1 {
