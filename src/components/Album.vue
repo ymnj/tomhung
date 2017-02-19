@@ -12,7 +12,7 @@
 
 		<div class="image-flex-wrap">
 			<div class="image-cell" v-for="image in images">
-				<img :src="image">
+				<img v-lazy="image" lazy="loading">
 			</div>
 		</div>
 		
@@ -39,7 +39,8 @@ export default {
 			album: this.$route.params.album,
 			albumInfo: {},
 			images: [],
-			backgroundImage: ""
+			backgroundImage: "",
+			spinner: '../assets/spinner.svg'
 		}
 	},
 	methods: {
@@ -123,6 +124,17 @@ export default {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+
+			img:not([src]) {
+			  visibility: hidden;
+			}
+
+			/* Fixes Firefox anomaly */
+			@-moz-document url-prefix() {
+			    img:-moz-loading {
+			        visibility: hidden;
+			    }
+			}
 		}
 		
 		#intro {
@@ -147,9 +159,10 @@ export default {
 				width: 100%;
 				height: 100%;
 			}
+
+			img[lazy=loading] {
+		   	background: url('../assets/spinner.svg') no-repeat center center; 
+		  }
 		}
-
-		
-
 	}
 </style>

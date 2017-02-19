@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Vue2Filters from 'vue2-filters';
+import VueLazyload from 'vue-lazyload';
 
 import App from './App.vue';
 import {routes} from './routes';
@@ -8,6 +9,7 @@ import {routes} from './routes';
 
 Vue.use(VueRouter);
 Vue.use(Vue2Filters);
+Vue.use(VueLazyload);
 
 const router = new VueRouter({
 	routes,
