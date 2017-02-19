@@ -10,7 +10,9 @@
 
 		<section id="intro">{{ albumInfo.intro }}</section>
 
-		<asia></asia>
+		<component v-bind:is="album">
+		  <!-- component changes when album changes! -->
+		</component>
 		
 	</div>
 </template>
@@ -23,13 +25,7 @@ import zenscroll from 'zenscroll';
 
 import albums from './albums.js';
 import asia from './Asia.vue';
-
-
-cloudinary.config({
-  "cloud_name": config.NAME,
-  "api_key": config.KEY,
-  "api_secret": config.SECRET
-});
+import tofino from './Tofino.vue';
 
 export default {
 	data() {
@@ -42,15 +38,13 @@ export default {
 		}
 	},
 	components: {
-		asia
+		asia,
+		tofino
 	},
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
 			this.backgroundImage = `background: url(${this.albumInfo.imgUrl}) #fff no-repeat center center; background-size: cover;`;
-		},
-		getImg() {
-			
 		},
 		scroll() {
 			let duration = 1000;
@@ -59,15 +53,10 @@ export default {
 		  let myScroller = zenscroll.createScroller(scrollDiv, duration, edgeOffset)
 		  let target = document.getElementById("intro")
 		  myScroller.to(target);
-		},
-		infoSetup(album){
-			albumInfo = `albums.${album}`;
-		}	
+		}
 	},
 	mounted() {
 		this.init();
-		this.getImg();
-
 	}
 }
 </script>

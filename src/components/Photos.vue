@@ -13,7 +13,7 @@
 
 <script>
 
-import albums from '../albums/albums.js';
+import albums from './album/albums.js';
 
 
 export default {
