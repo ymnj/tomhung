@@ -1,7 +1,7 @@
 <template>
 
 	<div class="tom-layout">
-		<navBar class="z-depth-0"></navBar></navBar>
+		<navBar class="z-depth-0"></navBar>
 		<div class="content-layout">
 			<router-view></router-view>
 		</div>
@@ -11,7 +11,7 @@
 
 <script>
 	import NavBar from './components/NavBar.vue';
-
+	
 	export default {
 		components: {
 			navBar: NavBar

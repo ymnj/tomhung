@@ -1,7 +1,7 @@
 import Home from './components/Home.vue';
 import Photos from './components/Photos.vue';
 import Code from './components/Code.vue';
-import Album from './components/Album.vue';
+import Album from './components/album/Album.vue';
 import Blog from './components/Blog.vue';
 import Post from './components/Post.vue';
 

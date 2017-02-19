@@ -10,22 +10,20 @@
 
 		<section id="intro">{{ albumInfo.intro }}</section>
 
-		<div class="image-flex-wrap">
-			<div class="image-cell" v-for="image in images">
-				<img v-lazy="image" lazy="loading">
-			</div>
-		</div>
+		<asia></asia>
 		
 	</div>
 </template>
 
 <script>
 import cloudinary from 'cloudinary';
-import config from '../config/cloudinary.json';
+import config from '../../config/cloudinary.json';
 import axios from 'axios';
 import zenscroll from 'zenscroll';
 
-import albums from '../albums/albums.js';
+import albums from './albums.js';
+import asia from './Asia.vue';
+
 
 cloudinary.config({
   "cloud_name": config.NAME,
@@ -43,27 +41,16 @@ export default {
 			spinner: '../assets/spinner.svg'
 		}
 	},
+	components: {
+		asia
+	},
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
 			this.backgroundImage = `background: url(${this.albumInfo.imgUrl}) #fff no-repeat center center; background-size: cover;`;
 		},
 		getImg() {
-			let url = cloudinary.url(this.album, {format: 'json', type: 'list'});
-
-			//Cloudinary.url cannot return JSON of all photos in an album. Must manually tag photos for tag search through Cloudinary.url
-
-			axios.get(url)
-				.then((res) => {
-					this.images = res.data.resources.map(item => {
-						let id = item.public_id;
-						return (function(){
-							return cloudinary.url(id, { quality: 1 });
-						})(id);
-					});
-				}).catch((err) => {
-					console.log(err)
-				})
+			
 		},
 		scroll() {
 			let duration = 1000;
@@ -118,24 +105,6 @@ export default {
 				}
 		  }
 		}
-
-		.image-flex-wrap {
-			margin: 5% 10% 0;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-
-			img:not([src]) {
-			  visibility: hidden;
-			}
-
-			/* Fixes Firefox anomaly */
-			@-moz-document url-prefix() {
-			    img:-moz-loading {
-			        visibility: hidden;
-			    }
-			}
-		}
 		
 		#intro {
 			max-width: 600px;
@@ -149,20 +118,6 @@ export default {
 			font-size: 1em;	
 			}
 		}
-
-		.image-cell {
-			width: 48%;
-			height: auto;
-			margin-bottom: 4%;
-
-			img {
-				width: 100%;
-				height: 100%;
-			}
-
-			img[lazy=loading] {
-		   	background: url('../assets/spinner.svg') no-repeat center center; 
-		  }
-		}
+		
 	}
 </style>
