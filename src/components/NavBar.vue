@@ -57,16 +57,13 @@ export default {
 	}
 
 	nav {
+		padding-top: 40px;
 		background: url('../assets/transparent.svg') center / cover;
 		min-height: 64px;
-		height: 100%
-	}
-
-	nav {
-		padding-top: 40px;
+		height: 100%;
 
 		.nav-wrapper {
-
+			z-index: 5;
 			width: 80%;
 			margin: 0 auto;
 						

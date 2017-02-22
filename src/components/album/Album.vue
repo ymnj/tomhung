@@ -64,7 +64,7 @@ export default {
 <style lang="scss" scoped>
  
 	#album-container {
-		background-color: #fff;
+		background-color: #eee;
 		font-family: 'Ek Mukta', sans-serif;
 		
 		.cover-image {

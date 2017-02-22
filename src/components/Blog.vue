@@ -51,7 +51,7 @@
 <style lang="scss">
 	#blog-container {
 		padding: 200px 20% 0;
-		background-color: steelblue;
+		background-color: #eee;
 		height: 100%;
 	}
 
