@@ -26,9 +26,6 @@
 	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
 
 	body {
-
-		// overflow: hidden;
-
 		.content-layout {
 			margin-top: -64px;
 			width: 100%;
@@ -36,43 +33,37 @@
 		}
 	}	
 
-
-.fade-enter-active, .fade-leave-active {
-  transition-property: opacity;
-  transition-duration: 1s;
+.fade-enter {
+	opacity: 0;
 }
 
 .fade-enter-active {
-  transition-delay: 1s;
+	transition: opacity 0.25s ease;
+	transition-delay: 0.25s;
 }
 
-.fade-enter, .fade-leave-active {
-  opacity: 0
+.fade-leave {
 }
 
-// .fade-enter {
-// 	opacity: 0;
-// 	// position: absolute;
-// 	// margin-top: 100%;
+.fade-leave-active {
+	transition: opacity 0.25s ease;
+	opacity: 0;
+}
+
+
+
+// .fade-enter-active, .fade-leave-active {
+//   transition-property: opacity;
+//   transition-duration: 0.25s;
 // }
 
 // .fade-enter-active {
-// 	transition: opacity 1s ease;
-// 	// 						margin 0.5s ease-out;
+//   transition-delay: 0.25s;
 // }
 
-// .fade-leave {
-
+// .fade-enter, .fade-leave-active {
+//   opacity: 0;
 // }
-
-// .fade-leave-active {
-// 	// margin-top: 100%;
-// 	transition: opacity 1s ease;
-// 	opacity: 0;
-// 	// 						margin 0.9s ease-out;
-// }
-
-
 
 
 

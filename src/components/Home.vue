@@ -50,14 +50,17 @@
 
 #home-container {
 
-	background-color: #fff;
 	height: 100vh;
-
 	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+	/*Fix for choppy background image on CHROME. only for webkit  browsers*/
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	  background-attachment: scroll;
+	}
 
   #banner {
   	padding: 30vh 0 0 10%;
