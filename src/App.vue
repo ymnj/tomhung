@@ -3,9 +3,7 @@
 	<div class="tom-layout">
 		<navBar class="z-depth-0"></navBar>
 		<div class="content-layout">
-			<transition 
-				name="fade"
-				enter-active-class="animated tada" leave-active-class="animated bounceOutRight">
+			<transition name="fade">
 				<router-view></router-view>
 			</transition>
 		</div>
@@ -28,30 +26,59 @@
 	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
 
 	body {
+
+		overflow: hidden;
+
 		.content-layout {
 			margin-top: -64px;
+			width: 100%;
 			z-index: -5;
 		}
-	}
+	}	
 
-	// .fade-enter {
-	// 	opacity: 0;
-	// }
 
-	// .fade-enter-active {
-	// 	transition: opacity 2s ease;
-	// }
-	
-	// .fade-leave {
+.fade-enter {
+	opacity: 0;
+}
 
-	// }
+.fade-enter-active {
+	transition: opacity 2s ease;
+}
 
-	// .fade-leave-active {
-	// 	transition: opacity 2s ease;
-	// 	opacity: 0;
-	// }
+// .fade-leave {
 
-	
+// }
+
+// .fade-leave-active {
+// 	transition: opacity 2s ease;
+// 	opacity: 0;
+// }
+
+// .fade-enter {
+// 	opacity: 0;
+// 	// position: absolute;
+// 	// margin-top: 100%;
+// }
+
+// .fade-enter-active {
+// 	transition: opacity 1s ease;
+// 	// 						margin 0.5s ease-out;
+// }
+
+// .fade-leave {
+
+// }
+
+// .fade-leave-active {
+// 	// margin-top: 100%;
+// 	transition: opacity 1s ease;
+// 	opacity: 0;
+// 	// 						margin 0.9s ease-out;
+// }
+
+
+
+
 
 //#A9B7C0 Gre Blue
 //#C7D8C6 Minty
