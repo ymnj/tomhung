@@ -27,7 +27,7 @@
 
 	body {
 
-		overflow: hidden;
+		// overflow: hidden;
 
 		.content-layout {
 			margin-top: -64px;
@@ -37,22 +37,18 @@
 	}	
 
 
-.fade-enter {
-	opacity: 0;
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: 1s;
 }
 
 .fade-enter-active {
-	transition: opacity 2s ease;
+  transition-delay: 1s;
 }
 
-// .fade-leave {
-
-// }
-
-// .fade-leave-active {
-// 	transition: opacity 2s ease;
-// 	opacity: 0;
-// }
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 
 // .fade-enter {
 // 	opacity: 0;
