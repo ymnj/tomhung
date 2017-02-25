@@ -6,7 +6,7 @@
 			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
 		<ul>
-			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)" :src="cover.imgUrl"></li>
+			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.title)" v-lazy="cover.imgUrl" lazy="loading"></li>
 		</ul>
 	</div>
 </template>
@@ -14,7 +14,6 @@
 <script>
 
 import albums from './album/albums.js';
-
 
 export default {
 	data() {
@@ -88,6 +87,10 @@ export default {
 				display: block;
 			}
 
+			img[lazy=loading] {
+			 	background: url('../assets/spinner.svg') no-repeat center center; 
+			}
+	
 			img:hover {
 			    opacity: 0.9;
 			    cursor: pointer;

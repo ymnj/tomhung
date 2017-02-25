@@ -8,31 +8,54 @@
 
 		<div class="project-wrap">
 			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
 			</div>
-			<div class="project-info">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum explicabo reprehenderit ut quod eum, error voluptatum consectetur unde laborum magni at nemo, optio hic enim tenetur! In corporis ullam ex dolorem nulla officiis provident ab harum nostrum autem qui, dolores, rem architecto, quisquam repellendus debitis animi. Fugit nobis deleniti aliquid sint eaque soluta molestias unde asperiores blanditiis. Minima quidem, aliquid consequuntur tenetur placeat similique. Nam ipsum, delectus veritatis! Quod recusandae quia, consectetur. Laudantium saepe quisquam sapiente perferendis repellendus in molestiae hic consequatur. Aspernatur dolor saepe odio expedita eaque. Hic exercitationem accusantium enim repellat itaque doloribus sed quae, officia tempore soluta numquam velit cupiditate omnis commodi eum ex maxime voluptas aliquam culpa incidunt vero voluptatem beatae! Voluptates rem blanditiis ipsa nam aliquid, ullam voluptas nihil ut, laboriosam fugit fuga odit neque. Doloribus, adipisci reprehenderit eos sunt maxime voluptatum laboriosam, laborum, ipsum facere fugiat accusantium placeat tempora iste. Atque alias consequuntur at vel, voluptatibus non aspernatur eaque fugiat sint dolorum totam reprehenderit illo adipisci tempore sed delectus. Tempora qui natus, sapiente maiores error dolor ut molestiae dolores labore neque facere, possimus quibusdam placeat omnis, molestias consequuntur blanditiis. Neque ex ullam reprehenderit a alias, inventore, quis sunt vel, itaque culpa eos explicabo, fuga?
-			</div>
-		</div>
-
-		<div class="project-wrap">
 			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
 			</div>
-			<div class="project-info">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum explicabo reprehenderit ut quod eum, error voluptatum consectetur unde laborum magni at nemo, optio hic enim tenetur! In corporis ullam ex dolorem nulla officiis provident ab harum nostrum autem qui, dolores, rem architecto, quisquam repellendus debitis animi. Fugit nobis deleniti aliquid sint eaque soluta molestias unde asperiores blanditiis. Minima quidem, aliquid consequuntur tenetur placeat similique. Nam ipsum, delectus veritatis! Quod recusandae quia, consectetur. Laudantium saepe quisquam sapiente perferendis repellendus in molestiae hic consequatur. Aspernatur dolor saepe odio expedita eaque. Hic exercitationem accusantium enim repellat itaque doloribus sed quae, officia tempore soluta numquam velit cupiditate omnis commodi eum ex maxime voluptas aliquam culpa incidunt vero voluptatem beatae! Voluptates rem blanditiis ipsa nam aliquid, ullam voluptas nihil ut, laboriosam fugit fuga odit neque. Doloribus, adipisci reprehenderit eos sunt maxime voluptatum laboriosam, laborum, ipsum facere fugiat accusantium placeat tempora iste. Atque alias consequuntur at vel, voluptatibus non aspernatur eaque fugiat sint dolorum totam reprehenderit illo adipisci tempore sed delectus. Tempora qui natus, sapiente maiores error dolor ut molestiae dolores labore neque facere, possimus quibusdam placeat omnis, molestias consequuntur blanditiis. Neque ex ullam reprehenderit a alias, inventore, quis sunt vel, itaque culpa eos explicabo, fuga?
-			</div>
-		</div>
-
-		<div class="project-wrap">
 			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
 			</div>
-			<div class="project-info">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum explicabo reprehenderit ut quod eum, error voluptatum consectetur unde laborum magni at nemo, optio hic enim tenetur! In corporis ullam ex dolorem nulla officiis provident ab harum nostrum autem qui, dolores, rem architecto, quisquam repellendus debitis animi. Fugit nobis deleniti aliquid sint eaque soluta molestias unde asperiores blanditiis. Minima quidem, aliquid consequuntur tenetur placeat similique. Nam ipsum, delectus veritatis! Quod recusandae quia, consectetur. Laudantium saepe quisquam sapiente perferendis repellendus in molestiae hic consequatur. Aspernatur dolor saepe odio expedita eaque. Hic exercitationem accusantium enim repellat itaque doloribus sed quae, officia tempore soluta numquam velit cupiditate omnis commodi eum ex maxime voluptas aliquam culpa incidunt vero voluptatem beatae! Voluptates rem blanditiis ipsa nam aliquid, ullam voluptas nihil ut, laboriosam fugit fuga odit neque. Doloribus, adipisci reprehenderit eos sunt maxime voluptatum laboriosam, laborum, ipsum facere fugiat accusantium placeat tempora iste. Atque alias consequuntur at vel, voluptatibus non aspernatur eaque fugiat sint dolorum totam reprehenderit illo adipisci tempore sed delectus. Tempora qui natus, sapiente maiores error dolor ut molestiae dolores labore neque facere, possimus quibusdam placeat omnis, molestias consequuntur blanditiis. Neque ex ullam reprehenderit a alias, inventore, quis sunt vel, itaque culpa eos explicabo, fuga?
+			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
 			</div>
+			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
+			</div>
+			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
+			</div>
+			<div class="project-image">
+				<img src="../assets/peregrine-screen.png">
+			</div>
+			<div class="project-image2">
+				<img src="../assets/peregrine-screen.png">
+			</div>
+
+			<!-- <div class="project-info">
+				
+			</div> -->
 		</div>
 	</div>
 </template>
 
 <script>
+
+var options = [
+      {selector: '.project-image2', offset: 50, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#staggered-test', offset: 205, callback: function(el) {
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } },
+      {selector: '#staggered-test', offset: 400, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } },
+      {selector: '#image-test', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
 
 </script>
 
@@ -43,8 +66,7 @@
 	#code-container	{
 
 		font-family: $font;
-		padding: 100px 10% 0;
-
+		padding: 100px 20% 0;
 		background-color: #fff;
 		height: 100%;
 
@@ -69,19 +91,19 @@
 
 		.project-wrap {
 			margin-bottom: 10%;
-			border: 1px solid black;
 			display: flex;
+			flex-direction: column;
 
-			.project-image{
-				width: 60%;
-				min-height: 100%;
-				background: url('../assets/peregrine-screen.png') center center;
-				background-color: steelblue;
-				-webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
+			img{
+				border-radius: 20px;
+				display: block;
+				width: 600px;
+				height: 460px;
+				box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.49);
+		    -moz-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.49);
+		    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.49);
 			}
+		
 
 			.project-info {
 				width: 40%;
