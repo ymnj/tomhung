@@ -8,12 +8,12 @@
       <ul class="right hide-on-med-and-down">
           <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
 	       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
-	        <li><router-link active-class="is-active" to="/code">Code</router-link><li>
+	        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
       </ul>
       <ul class="side-nav" id="mobile">
         <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
        	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
-        <li><router-link active-class="is-active" to="/code">Code</router-link><li>
+        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
       </ul>
     </div>
   </nav>
