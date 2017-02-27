@@ -2,7 +2,7 @@
 	<div id="album-container">
 		<div class="cover-image" :style="backgroundImage">
 			<div class="cover-text">
-				<h1>{{ albumInfo.title | capitalize }}</h1>
+				<h1>{{ albumInfo.title }}</h1>
 				<p>{{ albumInfo.tagLine }}</p>
 				<i class="material-icons md-48" @click="scroll">arrow_drop_down_circle</i>
 			</div>
@@ -18,14 +18,13 @@
 </template>
 
 <script>
-import cloudinary from 'cloudinary';
-import config from '../../config/cloudinary.json';
-import axios from 'axios';
 import zenscroll from 'zenscroll';
 
 import albums from './albums.js';
 import asia from './Asia.vue';
 import tofino from './Tofino.vue';
+import stanleypark from './StanleyPark.vue';
+import seatosky from './SeaToSky.vue';
 
 export default {
 	data() {
@@ -39,7 +38,9 @@ export default {
 	},
 	components: {
 		asia,
-		tofino
+		tofino,
+		"stanley-park": stanleypark,
+		"sea-to-sky": seatosky
 	},
 	methods: {
 		init() {
@@ -53,7 +54,10 @@ export default {
 		  let myScroller = zenscroll.createScroller(scrollDiv, duration, edgeOffset)
 		  let target = document.getElementById("intro")
 		  myScroller.to(target);
-		}
+		},
+		titleFormat(title) {
+		
+		},
 	},
 	mounted() {
 		this.init();
