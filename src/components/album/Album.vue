@@ -76,7 +76,6 @@ export default {
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		 	background-size: cover;
-			
 			width: 100%;
 		  height: 100vh;
 			text-align: center;
@@ -88,7 +87,6 @@ export default {
 		  	top: 40%; 
 		  	left: 50%;
 		  	max-width: 600px;
-		  	// margin: 0 auto;
 		  	color: #fff;
 			  letter-spacing: 3px;
 
@@ -103,12 +101,13 @@ export default {
 			max-width: 600px;
 			font-size: 1.4em;
 			letter-spacing: 1px;
-			padding-top: 5%;
+			padding: 5% 0;
 			margin: 0 auto;
 			line-height: 1.3em;
 
-			@media screen and (max-width: 500px) {
-			font-size: 1em;	
+			@media screen and (max-width: 926px) {
+			font-size: 1em;
+			padding: 5%;
 			}
 		}
 		

@@ -6,8 +6,8 @@
 			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
 		<ul>
-			<li v-for="cover in albumCovers">
-				<img @click="navigateTo(cover.url)" v-lazy="cover.imgUrl" lazy="loading">
+			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)">
+				<img v-lazy="cover.imgUrl" lazy="loading">
 				<div class="coverDescription">
 					<h2>{{cover.title}}</h2>
 					<p>{{cover.tagLine}}</p>
