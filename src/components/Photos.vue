@@ -8,6 +8,10 @@
 		<ul>
 			<li v-for="cover in albumCovers">
 				<img @click="navigateTo(cover.url)" v-lazy="cover.imgUrl" lazy="loading">
+				<div class="coverDescription">
+					<h2>{{cover.title}}</h2>
+					<p>{{cover.tagLine}}</p>
+				</div>
 			</li>
 		</ul>
 	</div>
@@ -44,6 +48,10 @@ export default {
 		padding: 100px 10% 0;
 		background-color: #fff;
 
+		@media only screen and (max-width : 926px) {
+			padding: 100px 0 0;	
+		}
+
 		header {
 			h1 {
 				text-align: center;
@@ -68,7 +76,7 @@ export default {
 
 				p {
 					font-size: 1.2em;
-					padding: 10% 2.5%;
+					padding: 10% 5%;
 				}
 			}
 
@@ -76,12 +84,34 @@ export default {
 		
 		ul {
 			padding: 0;
+			margin: 0;
 			display: flex;
 			flex-wrap: wrap;
 			
 			li {
 				width: 50%;
+				position: relative;
+				text-align: center;
+
+				.coverDescription {
+					background-color: rgba(0, 0, 0, 0.5);
+					opacity: 0;
+					color: #fff;
+					position: absolute;
+				 	top: 0; 
+				 	padding-top: 24%;
+				  width: 100%;  
+				  height: 100%; 
+				  left: 0; 
+				  right: 0;
+				  margin: 0 auto;
+
+				  p {
+				  	letter-spacing: 5px;
+				  }
+				}
 			}
+			
 
 			img {
 				width: 100%;
@@ -93,10 +123,15 @@ export default {
 			 	background: url('../assets/spinner.svg') no-repeat center center; 
 			}
 	
-			img:hover {
-			    opacity: 0.9;
+			li:hover {
+					transition: all 1s ease;
 			    cursor: pointer;
-			    filter: alpha(opacity=50); /* For IE8 and earlier */
+
+					.coverDescription {
+						transition: all 0.8s ease;
+						opacity: 1;
+					}
+
 			}
 			
 			@media only screen  and (max-width : 926px) {
