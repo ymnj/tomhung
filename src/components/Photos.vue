@@ -5,13 +5,15 @@
 			<p>Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so the hobby never took off. 
 			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
-		<ul class="animated fadeIn">
-			<li v-for="cover in albumCovers"><img @click="navigateTo(cover.url)" v-lazy="cover.imgUrl" lazy="loading"></li>
+		<ul>
+			<li v-for="cover in albumCovers">
+				<img @click="navigateTo(cover.url)" v-lazy="cover.imgUrl" lazy="loading">
+			</li>
 		</ul>
 	</div>
 </template>
 
-<script>
+<script>		
 
 import albums from './album/albums.js';
 
