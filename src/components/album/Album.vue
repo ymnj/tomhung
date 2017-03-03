@@ -45,7 +45,7 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background: url(${this.albumInfo.imgUrl}) #fff no-repeat center center; background-size: cover;`;
+			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat fixed center top`;
 		},
 		scroll() {
 			let duration = 1000;
@@ -76,6 +76,7 @@ export default {
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		 	background-size: cover;
+		 	position: relative;
 			width: 100%;
 		  height: 100vh;
 			text-align: center;
