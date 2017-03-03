@@ -6,7 +6,7 @@
 			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
 		<ul>
-			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)">
+			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)" class="animated fadeIn">
 				<img v-lazy="cover.imgUrl" lazy="loading">
 				<div class="coverDescription">
 					<h2>{{cover.title}}</h2>
@@ -93,6 +93,16 @@ export default {
 				position: relative;
 				text-align: center;
 
+				//Animate CSS delay to render after transition fadein
+				-webkit-animation-duration: 1s;
+			  -webkit-animation-delay: 0.25s;
+			  -moz-animation-duration: 1s;
+			  -moz-animation-delay: 0.25s;
+			  -o-animation-duration: 1s;
+			  -o-animation-delay: 0.25s;
+			  -ms-animation-duration: 1s;
+			  -ms-animation-delay: 0.25s;
+			  
 				.coverDescription {
 					background-color: rgba(0, 0, 0, 0.5);
 					opacity: 0;

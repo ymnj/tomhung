@@ -1,10 +1,11 @@
 <template>
 	<div id="album-container">
-		<div class="cover-image" :style="backgroundImage">
+		<div class="cover-banner">
+			<div class="cover-image" :style="backgroundImage"></div>
 			<div class="cover-text">
-				<h1>{{ albumInfo.title }}</h1>
-				<p>{{ albumInfo.tagLine }}</p>
-				<i class="material-icons md-48" @click="scroll">arrow_drop_down_circle</i>
+				<h1 class="animated fadeInDown">{{ albumInfo.title }}</h1>
+				<p class="animated fadeInUp">{{ albumInfo.tagLine }}</p>
+				<i class="material-icons md-48 animated zoomIn" @click="scroll">arrow_drop_down_circle</i>
 			</div>
 		</div>
 
@@ -45,7 +46,7 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat fixed center top`;
+			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat fixed center top;`;
 		},
 		scroll() {
 			let duration = 1000;
@@ -66,7 +67,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- 
+
 	#album-container {
 		background-color: #eee;
 		font-family: 'Ek Mukta', sans-serif;
@@ -80,23 +81,24 @@ export default {
 			width: 100%;
 		  height: 100vh;
 			text-align: center;
-
-		  .cover-text {
-		  	position: absolute;
-		  	width: 500px;
-		  	margin-left: -250px;
-		  	top: 40%; 
-		  	left: 50%;
-		  	max-width: 600px;
-		  	color: #fff;
-			  letter-spacing: 3px;
-
-				.material-icons.md-48 {
-					font-size: 48px;
-					cursor: pointer;
-				}
-		  }
 		}
+
+		.cover-text {
+	  	position: absolute;
+	  	width: 500px;
+	  	margin-left: -250px;
+	  	top: 40%; 
+	  	left: 50%;
+	  	text-align: center;
+	  	//max-width: 600px;
+	  	color: #fff;
+		  letter-spacing: 3px;
+
+			.material-icons.md-48 {
+				font-size: 48px;
+				cursor: pointer;
+			}
+	  }
 		
 		#intro {
 			max-width: 600px;
