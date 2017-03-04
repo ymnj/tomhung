@@ -8,10 +8,10 @@
 		<ul>
 			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)" class="animated fadeIn">
 				<img v-lazy="cover.imgUrl" lazy="loading">
-				<div class="coverDescription">
+				<figcaption class="coverDescription">
 					<h2>{{cover.title}}</h2>
 					<p>{{cover.tagLine}}</p>
-				</div>
+				</figcaption>
 			</li>
 		</ul>
 	</div>
@@ -69,6 +69,7 @@ export default {
 				margin: 0 auto;
 			}
 
+
 			@media only screen and (max-width : 926px) {
 				h1 {
 					font-size: 4em;
@@ -92,6 +93,7 @@ export default {
 				width: 50%;
 				position: relative;
 				text-align: center;
+				overflow: hidden;
 
 				//Animate CSS delay to render after transition fadein
 				-webkit-animation-duration: 1s;
@@ -109,22 +111,22 @@ export default {
 					color: #fff;
 					position: absolute;
 				 	top: 0; 
-				 	padding-top: 24%;
+				  left: 0; 
+				 	padding-top: 20%;
 				  width: 100%;  
 				  height: 100%; 
-				  left: 0; 
-				  right: 0;
 				  margin: 0 auto;
 
 				  p {
 				  	letter-spacing: 5px;
 				  }
 				}
+
 			}
-			
 
 			img {
-				width: 100%;
+				max-width: 100%;
+
 				position: relative;
 				display: block;
 			}
@@ -137,13 +139,18 @@ export default {
 					transition: all 1s ease;
 			    cursor: pointer;
 
+			    img {
+			    	transform: scale(1.2);
+			    	transition: all 0.75s;
+			    }
+
 					.coverDescription {
 						transition: all 0.8s ease;
 						opacity: 1;
 					}
 
 			}
-			
+
 			@media only screen  and (max-width : 926px) {
 				flex-direction: column;
 				li {

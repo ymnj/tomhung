@@ -2,11 +2,11 @@
 	<div id="album-container">
 		<div class="cover-banner">
 			<div class="cover-image" :style="backgroundImage"></div>
-			<div class="cover-text">
+			<figcaption class="cover-text">
 				<h1 class="animated fadeInDown">{{ albumInfo.title }}</h1>
 				<p class="animated fadeInUp">{{ albumInfo.tagLine }}</p>
 				<i class="material-icons md-48 animated zoomIn" @click="scroll">arrow_drop_down_circle</i>
-			</div>
+			</figcaption>
 		</div>
 
 		<section id="intro">{{ albumInfo.intro }}</section>
@@ -55,10 +55,7 @@ export default {
 		  let myScroller = zenscroll.createScroller(scrollDiv, duration, edgeOffset)
 		  let target = document.getElementById("intro")
 		  myScroller.to(target);
-		},
-		titleFormat(title) {
-		
-		},
+		}
 	},
 	mounted() {
 		this.init();
@@ -71,7 +68,7 @@ export default {
 	#album-container {
 		background-color: #eee;
 		font-family: 'Ek Mukta', sans-serif;
-		
+
 		.cover-image {
 			-webkit-background-size: cover;
 		  -moz-background-size: cover;
@@ -85,12 +82,13 @@ export default {
 
 		.cover-text {
 	  	position: absolute;
-	  	width: 500px;
-	  	margin-left: -250px;
-	  	top: 40%; 
+	  	width: 400px;
+	  	height: 220px;
+	  	margin-left: -200px;
+	  	margin-top: -110px;
+	  	top: 50%; 
 	  	left: 50%;
 	  	text-align: center;
-	  	//max-width: 600px;
 	  	color: #fff;
 		  letter-spacing: 3px;
 
@@ -99,7 +97,12 @@ export default {
 				cursor: pointer;
 			}
 	  }
-		
+
+	  h1, p, i {
+	  	 -webkit-animation-duration: 1s;
+			  -webkit-animation-delay: 0.5s;
+	  }
+
 		#intro {
 			max-width: 600px;
 			font-size: 1.4em;
