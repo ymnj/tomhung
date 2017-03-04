@@ -54,7 +54,7 @@ import projects from './projects.js';
 	#projects-container	{
 
 		font-family: $font;
-		padding: 100px 20% 0;
+		padding: 100px 10% 0;
 		background-color: #fff;
 		height: 100%;
 	
@@ -74,6 +74,17 @@ import projects from './projects.js';
 				font-size: 1.4em;
 				letter-spacing: 1px;
 				margin: 0 auto;
+			}
+
+			@media only screen and (max-width : 926px) {
+				h1 {
+					font-size: 4em;
+				}
+
+				p {
+					font-size: 1.2em;
+					padding: 10% 5%;
+				}
 			}
 		}
 

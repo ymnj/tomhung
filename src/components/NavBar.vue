@@ -1,19 +1,13 @@
 <template>
 	<nav>
     <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
-      <router-link class="brand-logo" to="/" exact>
+      <router-link class="brand-logo left" to="/" exact>
 				<img id="logo" src="../../src/assets/TH03.png">
     	</router-link>
-      <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right">
           <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
 	       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
 	        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
-      </ul>
-      <ul class="side-nav" id="mobile">
-        <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
-       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
-        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
       </ul>
     </div>
   </nav>

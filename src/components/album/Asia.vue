@@ -3,19 +3,19 @@
 		<div class="image-large">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-1.jpg`" lazy="loading">
 		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-3.jpg`" lazy="loading">
+		</div>
 		<div class="image-small">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-2.jpg`" lazy="loading">
 		</div>
 		<div class="image-small">
-			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-3.jpg`" lazy="loading">
-		</div>
-		<div class="image-small">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-4.jpg`" lazy="loading">
 		</div>
-		<div class="image-small">
+		<div class="image-large">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-5.jpg`" lazy="loading">
 		</div>
-		<div class="image-small">
+		<div class="image-large">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-6.jpg`" lazy="loading">
 		</div>
 		<div class="image-small">
@@ -24,7 +24,7 @@
 		<div class="image-small">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-8.jpg`" lazy="loading">
 		</div>
-		<div class="image-small">
+		<div class="image-large">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-9.jpg`" lazy="loading">
 		</div>
 		<div class="image-small">
@@ -33,9 +33,117 @@
 		<div class="image-small">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-11.jpg`" lazy="loading">
 		</div>
-		<div class="image-small">
+		<div class="image-large">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-12.jpg`" lazy="loading">
 		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-13.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-14.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-15.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-16.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-17.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-18.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-19.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-20.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-21.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-22.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-23.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-24.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-25.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-26.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-27.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-28.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/taiwan-29.jpg`" lazy="loading">
+		</div>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a in incidunt veniam, itaque perferendis quae! Similique in quam impedit voluptates sunt et odit culpa sequi. Facere mollitia, quasi soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusantium maiores quos nemo at, expedita nostrum delectus, suscipit ex nulla sapiente voluptatum, laboriosam assumenda, dolore deleniti iusto aliquam debitis! Velit ullam rem sed sapiente quis, nemo aspernatur harum fuga, ex ipsam voluptate unde sunt cumque enim labore minus explicabo aliquid.
+		</p> 
+		
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-1.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-2.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-3.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-4.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-5.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-6.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-7.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-8.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-9.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-10.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-11.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-12.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-13.jpg`" lazy="loading">
+		</div>
+		<div class="image-small">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-14.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-15.jpg`" lazy="loading">
+		</div>
+		<div class="image-large">
+			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_10/v1487481481/asia/hk-16.jpg`" lazy="loading">
+		</div>
+
+
+
+
 	</div>
 </template>
 

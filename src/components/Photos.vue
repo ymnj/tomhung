@@ -44,6 +44,7 @@ export default {
 	$font: 'Ek Mukta', sans-serif;
 
 	#photos-container {
+		backface-visibility: hidden;
 		font-family: $font;
 		padding: 100px 10% 0;
 		background-color: #fff;
@@ -95,8 +96,9 @@ export default {
 				text-align: center;
 				overflow: hidden;
 
+
 				//Animate CSS delay to render after transition fadein
-				-webkit-animation-duration: 1s;
+				-webkit-animation-duration: 2s;
 			  -webkit-animation-delay: 0.25s;
 			  -moz-animation-duration: 1s;
 			  -moz-animation-delay: 0.25s;
@@ -126,7 +128,6 @@ export default {
 
 			img {
 				max-width: 100%;
-
 				position: relative;
 				display: block;
 			}
@@ -136,11 +137,12 @@ export default {
 			}
 	
 			li:hover {
+					
 					transition: all 1s ease;
 			    cursor: pointer;
-
+					
 			    img {
-			    	transform: scale(1.2);
+						transform: scale(1.2);
 			    	transition: all 0.75s;
 			    }
 
