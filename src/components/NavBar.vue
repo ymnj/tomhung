@@ -1,21 +1,23 @@
 <template>
-	<nav>
-    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
-      <router-link class="brand-logo left" to="/" exact>
-				<img id="logo" src="../../src/assets/TH03.png">
-    	</router-link>
-      <ul class="right">
-          <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
-	       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
-	        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
-      </ul>
-    </div>
-  </nav>
+	<div class="navbar-fixed">
+		<nav class="z-depth-0">
+	    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
+	      <router-link class="brand-logo left" to="/" exact>
+					<img id="logo" src="../../src/assets/TH03.png">
+	    	</router-link>
+	      <ul class="right">
+	          <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
+		       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
+		        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
+	      </ul>
+	    </div>
+	  </nav>
+  </div>
 </template>
 
 <script>
-window.$ = window.jQuery = require('materialize-css/node_modules/jquery/dist/jquery.js'); 
 require('materialize-css');
+const Headroom = require('headroom.js');
 
 export default {
 	data() {
@@ -31,12 +33,23 @@ export default {
 		}
 	},
 	mounted() {
-		$('.button-collapse').sideNav();
+		var el = document.querySelector(".nav-wrapper");		
+		var headroom  = new Headroom(el, {
+		  "offset": 64,
+		  "classes": {
+		    "top": "headroom--top"
+		  }
+		});
+		// initialise
+		headroom.init();
+
+		//Changes navbar to light color on dark background
 		if(this.$route.path === '/photos/asia'){
 			this.requireLightText = !this.requireLightText;
 		};
 	}
 }
+
 </script>
 
 <style lang="scss">
@@ -51,16 +64,31 @@ export default {
 	}
 
 	nav {
-		padding-top: 40px;
-		background: url('../assets/transparent.svg') center / cover;
 		min-height: 64px;
-		height: 100%;
+		background: url('../assets/transparent.svg') center / cover;
+
+		//Hide Nav on scroll down
+		.nav-wrapper.headroom--unpinned {
+			top: -64px;
+			background: url('../assets/transparent.svg') center / cover;
+		}
+
+		.nav-wrapper.headroom--pinned {
+			background-color: #fff;
+		}
+
+		.nav-wrapper.headroom--top {
+			background: url('../assets/transparent.svg') center / cover;
+		}
 
 		.nav-wrapper {
 			z-index: 5;
-			width: 80%;
+			width: 100%;
+			padding: 0 10%;
 			margin: 0 auto;
-						
+			top: 0;
+			transition: all 1s ease;
+								
 			ul.right {
 				a {
 				padding: 0;
@@ -112,6 +140,10 @@ export default {
 				color: #fff;
 			}
 		}
+	}
+
+	.nav-up {
+		top: -64px;
 	}
 
 

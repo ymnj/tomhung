@@ -44,7 +44,6 @@ export default {
 	$font: 'Ek Mukta', sans-serif;
 
 	#photos-container {
-		backface-visibility: hidden;
 		font-family: $font;
 		padding: 100px 10% 0;
 		background-color: #fff;
@@ -69,7 +68,6 @@ export default {
 				letter-spacing: 1px;
 				margin: 0 auto;
 			}
-
 
 			@media only screen and (max-width : 926px) {
 				h1 {
@@ -137,7 +135,6 @@ export default {
 			}
 	
 			li:hover {
-					
 					transition: all 1s ease;
 			    cursor: pointer;
 					

@@ -1,6 +1,6 @@
 <template>
 
-	<div class="tom-layout">
+	<div id="tom-layout">
 		<navBar class="z-depth-0"></navBar>
 		<div class="content-layout">
 			<transition name="fade">
@@ -24,8 +24,9 @@
 
 <style lang="scss">
 	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
-
+	
 	body {
+		
 		.content-layout {
 			margin-top: -64px;
 			width: 100%;
