@@ -16,20 +16,6 @@
 import projectDetail from './ProjectDetail.vue';
 import projects from './projects.js';
 
-	var options = [
-      {selector: '#peregrine-screen', offset: 700, callback: function(el) {
-        let fadeInEl = document.getElementById('codrlogue-screen');
-        fadeInEl.className += " animated fadeInLeft";
-        fadeInEl.nextElementSibling.className += " animated fadeInRight";
-      } },
-      {selector: '#code-container', offset: 1800, callback: function(el) {
-        let fadeInEl = document.getElementById('blog-screen');
-        fadeInEl.className += " animated fadeInLeft";
-      } }
-    ];
-
-    Materialize.scrollFire(options);
-
  	export default {
  		components: {
  			projectDetail
@@ -40,9 +26,7 @@ import projects from './projects.js';
  			}
  		},
  		mounted() {
- 			let el = document.getElementById('peregrine-screen');
- 			el.className += " animated fadeInLeft";
- 			el.nextElementSibling.className += " animated fadeInRight";
+ 
  		}
  	}
 </script>
@@ -55,7 +39,7 @@ import projects from './projects.js';
 
 		font-family: $font;
 		padding: 100px 10% 0;
-		background-color: #fff;
+		background-color: #eee;
 		height: 100%;
 	
 		header{
@@ -85,6 +69,13 @@ import projects from './projects.js';
 					font-size: 1.2em;
 					padding: 10% 5%;
 				}
+
+
+
+
+
+
+
 			}
 		}
 

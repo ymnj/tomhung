@@ -94,7 +94,6 @@ export default {
 				text-align: center;
 				overflow: hidden;
 
-
 				//Animate CSS delay to render after transition fadein
 				-webkit-animation-duration: 2s;
 			  -webkit-animation-delay: 0.25s;
@@ -116,6 +115,7 @@ export default {
 				  width: 100%;  
 				  height: 100%; 
 				  margin: 0 auto;
+				  -webkit-backface-visibility: hidden;
 
 				  p {
 				  	letter-spacing: 5px;
@@ -135,16 +135,15 @@ export default {
 			}
 	
 			li:hover {
-					transition: all 1s ease;
 			    cursor: pointer;
 					
 			    img {
-						transform: scale(1.2);
+						//transform: scale(1.2);
 			    	transition: all 0.75s;
 			    }
 
 					.coverDescription {
-						transition: all 0.8s ease;
+						transition: opacity 0.8s;
 						opacity: 1;
 					}
 
