@@ -89,7 +89,7 @@
 		</div>
 
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a in incidunt veniam, itaque perferendis quae! Similique in quam impedit voluptates sunt et odit culpa sequi. Facere mollitia, quasi soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusantium maiores quos nemo at, expedita nostrum delectus, suscipit ex nulla sapiente voluptatum, laboriosam assumenda, dolore deleniti iusto aliquam debitis! Velit ullam rem sed sapiente quis, nemo aspernatur harum fuga, ex ipsam voluptate unde sunt cumque enim labore minus explicabo aliquid.
+			Since a Canadian passport holder can only stay in the country for 90 days without a visa, I had to do a visa run in order to increase my duration. Hong Kong is a common location to accomplish this due to its proximity and low costs for such a quick flight. My childhood friend from Canada who currently lived in Taiwan decided to accompany me for this short weekend trip.
 		</p> 
 		
 		<div class="image-large">

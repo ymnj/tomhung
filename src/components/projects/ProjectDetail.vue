@@ -6,7 +6,13 @@
 			</div>
 			<div class="project-info">
 				<h1>{{project.title}}</h1>
+				<ul class="link-icons">
+					<li v-for="link in project.links" v-html="link"></li>
+				</ul>
 				<p>{{ project.intro }}</p>
+				<ul class="framework-icons">
+					<li v-for="framework in project.frameworks" v-html="framework"></li>
+				</ul>
 			</div>
 		</div>
 </template>
@@ -21,7 +27,6 @@
 	
 	.project-wrap {
 		display: flex;
-		background-color: blue;
 
 		.side-arrow {
 			width: 50px;
@@ -30,7 +35,7 @@
 			top: 50%;
 			right: 0;
 			margin-top: -25px;
-			margin-right: -25px;
+			margin-right: -35px;
 			background-color: #fff;
 			transform: rotate(45deg);
 		}
@@ -54,7 +59,7 @@
 			z-index: 5;
 
 			h1{
-				margin: 8% 5%;
+				margin: 8% 5% 0;
 				padding-left: 2.5%;
 				border-left: 5px solid #ff4081;
 				font-size: 1.5em;
@@ -62,7 +67,26 @@
 			}
 
 			p {
-				margin: 5%;
+				margin: 0 5%;
+				line-height: 1.8em;
+			}
+
+			.link-icons, .framework-icons {
+				margin-left: 5%;
+
+				a {
+					color: inherit;
+					font-size: 1.5em;
+				}
+
+				li {
+					padding-right: 2.5%;
+					display: inline-block;
+				}
+			}
+
+			.framework-icons {
+				font-size: 2em;
 			}
 		}
 	}
@@ -72,14 +96,20 @@
 		.project-info {
 			background-color: #666362;
 			color: #fff;
+			transition: background-color 0.5s ease;
 		}
 
 		img {
 			transform: scale(1.1);
 		}
 
+		.link-icons a:hover {
+			color: #ff4081;
+		}
 		.side-arrow {
 			background-color: #666362;
+			margin-right: -25px;
+			transition: all 0.5s ease;
 			webkit-box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.75);
 			box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.75);
@@ -102,9 +132,16 @@
 
 		.side-arrow {
 			left: 0;
+			margin-left: -35px;
+		}
+	}
+
+	.project-wrap:nth-child(odd):hover {
+		.side-arrow {
 			margin-left: -25px;
 		}
 	}
+
 
 	/***************** SMALL SCREEN COLLAPSE *****************/
 	@media only screen and (max-width : 926px){

@@ -113,7 +113,7 @@ export default {
 			letter-spacing: 1px;
 			padding: 5% 0;
 			margin: 0 auto;
-			line-height: 1.3em;
+			line-height: 1.5em;
 
 			@media screen and (max-width: 926px) {
 			font-size: 1em;

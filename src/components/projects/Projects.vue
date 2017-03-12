@@ -39,11 +39,9 @@ import projects from './projects.js';
 
 		font-family: $font;
 		padding: 100px 10% 0;
-		background-color: #eee;
-		height: 100%;
 	
 		header{
-			background-color: #fff;
+			
 			h1 {
 				text-align: center;
 				letter-spacing: 1px;
@@ -54,10 +52,11 @@ import projects from './projects.js';
 
 			p {
 				max-width: 600px;
-				padding: 5% 0;
 				font-size: 1.4em;
 				letter-spacing: 1px;
+				padding: 5% 0;
 				margin: 0 auto;
+				line-height: 1.5em;
 			}
 
 			@media only screen and (max-width : 926px) {
@@ -69,12 +68,6 @@ import projects from './projects.js';
 					font-size: 1.2em;
 					padding: 10% 5%;
 				}
-
-
-
-
-
-
 
 			}
 		}

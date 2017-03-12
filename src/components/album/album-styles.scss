@@ -8,6 +8,15 @@
 		margin-bottom: 2%;
 	}
 
+	p {
+		max-width: 600px;
+		font-size: 1.4em;
+		letter-spacing: 1px;
+		padding: 5% 0;
+		margin: 0 auto;
+		line-height: 1.5em;
+	}
+
 	@media only screen and (max-width : 926px) {
 		margin: 0;
 	}

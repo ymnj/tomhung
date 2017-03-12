@@ -39,8 +39,8 @@
 }
 
 .fade-enter-active {
-	transition: opacity 0.25s ease;
-	//transition-delay: 0.25s;
+	transition: opacity 0.5s ease;
+	//\\transition-delay: 0.25s;
 }
 
 .fade-leave {
@@ -51,10 +51,4 @@
 	// opacity: 0;
 }
 
-
-
-//#A9B7C0 Gre Blue
-//#C7D8C6 Minty
-//#EFD9C1 Light
-//#CCCBC6 Powder
 </style>
