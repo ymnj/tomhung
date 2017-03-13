@@ -9,7 +9,11 @@
 				<ul class="link-icons">
 					<li v-for="link in project.links" v-html="link"></li>
 				</ul>
-				<p>{{ project.intro }}</p>
+				<!-- <p v-html="project.intro"></p> -->
+				<p>
+					The initial idea behind Peregrine was a website that would connect fellow travelers together by common interests before their trip had even started. As part of my final project during my bootcamp, I mistakenly jumped right into the project after a designing a few wireframes and a basic ERD, but didn't spend enough time on site functionality and implementation. Therefore, any neat ideas I had during development was often implemented without understanding how it would benefit or work with current functions. Needless to say, my simple idea suddenly became not so simple. Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.
+				</p>
+				<i class="read-more fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
 				<ul class="framework-icons">
 					<li v-for="framework in project.frameworks" v-html="framework"></li>
 				</ul>
@@ -42,6 +46,7 @@
 		
 		.project-image {
 			width: 50%;
+			max-height: 480px;
 			position: relative;
 			overflow: hidden;
 
@@ -55,8 +60,10 @@
 
 		.project-info {
 			width: 50%;
+			max-height: 480px;
 			background-color: #fff;
 			z-index: 5;
+			overflow: hidden;
 
 			h1{
 				margin: 8% 5% 0;
@@ -69,6 +76,12 @@
 			p {
 				margin: 0 5%;
 				line-height: 1.8em;
+			}
+
+
+			i.read-more {
+				text-align: center;
+				display: block;
 			}
 
 			.link-icons, .framework-icons {
@@ -85,6 +98,10 @@
 				}
 			}
 
+			.link-icons, .read-more {
+				color: steelblue;
+			}
+	
 			.framework-icons {
 				font-size: 2em;
 			}
@@ -97,13 +114,17 @@
 			background-color: #666362;
 			color: #fff;
 			transition: background-color 0.5s ease;
+
+			.link-icons, .read-more {
+				color: LightSkyBlue;
+			}
 		}
 
 		img {
 			transform: scale(1.1);
 		}
 
-		.link-icons a:hover {
+		.link-icons a:hover, .read-more:hover {
 			color: #ff4081;
 		}
 		.side-arrow {
@@ -128,6 +149,26 @@
 	.project-wrap:nth-child(odd){
 		.project-image{
 			order: 2
+		}
+
+		h1, .link-icons, .framework-icons {
+			text-align: right;
+		}
+
+		.link-icons, .framework-icons {
+			margin-right: 5%;
+		}
+
+		li:last-child {
+			padding-right: 0;
+		}
+
+		h1 {
+			padding-right: 2.5%;
+			border-right: 5px solid #ff4081;
+			border-left: 0;
+			font-size: 1.5em;
+			text-transform: uppercase;
 		}
 
 		.side-arrow {
