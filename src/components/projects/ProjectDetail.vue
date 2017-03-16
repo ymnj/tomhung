@@ -9,10 +9,7 @@
 				<ul class="link-icons">
 					<li v-for="link in project.links" v-html="link"></li>
 				</ul>
-				<!-- <p v-html="project.intro"></p> -->
-				<p>
-					The initial idea behind Peregrine was a website that would connect fellow travelers together by common interests before their trip had even started. As part of my final project during my bootcamp, I mistakenly jumped right into the project after a designing a few wireframes and a basic ERD, but didn't spend enough time on site functionality and implementation. Therefore, any neat ideas I had during development was often implemented without understanding how it would benefit or work with current functions. Needless to say, my simple idea suddenly became not so simple. Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.  Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.
-				</p>
+				<p v-html="project.intro"></p>
 				<ul class="framework-icons">
 					<li v-for="framework in project.frameworks" v-html="framework"></li>
 				</ul>
@@ -46,7 +43,7 @@
 		
 		.project-image {
 			width: 50%;
-			max-height: 480px;
+			height: 100%;
 			position: relative;
 			overflow: hidden;
 
@@ -104,7 +101,7 @@
 			}
 	
 			.framework-icons {
-				font-size: 2em;
+				font-size: 1.8em;
 			}
 		}
 
@@ -187,9 +184,15 @@
 
 
 	/***************** SMALL SCREEN COLLAPSE *****************/
-	@media only screen and (max-width : 1650px){
+	@media only screen and (max-width : 1550px){
+		.project-wrap .project-info p {
+			line-height: 1.5em;
+		}
+	}
+
+	@media only screen and (max-width : 1450px){
 		.project-info p{
-			font-size: 0.9em;
+			font-size: 0.95em;
 		}
 
 		.project-info .framework-icons {
@@ -198,7 +201,7 @@
 	}
 
 
-	@media only screen and (max-width : 1025px){
+	@media only screen and (max-width : 1080px){
 		.project-wrap {
 			flex-direction: column;
 			overflow: hidden;
@@ -214,6 +217,10 @@
 				left: 0;
 				height: 100%;
 				transform: translateX(-100%);
+
+				p {
+					line-height: 1.8em;
+				}
 			}
 
 			.side-arrow {
