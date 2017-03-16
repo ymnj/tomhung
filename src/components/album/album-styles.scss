@@ -41,6 +41,18 @@
 		}
 }
 
+.image-small.logo {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+.image-small.logo img {
+	width: 40%;
+	height: auto;
+	align-items: center;
+}
+
 .image-full {
 	width: 100%;
 }

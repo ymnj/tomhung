@@ -66,6 +66,9 @@
 		<div class="image-small">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_60/v1487481481/tofino/tofino-23.jpg`" lazy="loading">
 		</div>
+		<div class="image-small logo">
+			<img src="../../assets/TH03.png">
+		</div>
 		<div class="image-large">
 			<img v-lazy="`http://res.cloudinary.com/tomhung/image/upload/q_60/v1487481481/tofino/tofino-24.jpg`" lazy="loading">
 		</div>
