@@ -1,20 +1,20 @@
 <template>
 	<div class="project-wrap">
-			<div :id="`${project.title}-screen`" class="project-image">
-				<img :src="project.screen">
-				<span class="side-arrow"></span>
-			</div>
-			<div class="project-info">
-				<h1>{{project.title}}</h1>
-				<ul class="link-icons">
-					<li v-for="link in project.links" v-html="link"></li>
-				</ul>
-				<p v-html="project.intro"></p>
-				<ul class="framework-icons">
-					<li v-for="framework in project.frameworks" v-html="framework"></li>
-				</ul>
-			</div>
+		<div :id="`${project.title}-screen`" class="project-image">
+			<img :src="project.screen">
+			<span class="side-arrow"></span>
 		</div>
+		<div class="project-info">
+			<h1>{{project.title}}</h1>
+			<ul class="link-icons">
+				<li v-for="link in project.links" v-html="link"></li>
+			</ul>
+			<p v-html="project.intro"></p>
+			<ul class="framework-icons">
+				<li v-for="framework in project.frameworks" v-html="framework"></li>
+			</ul>
+		</div>
+	</div>
 </template>
 
 <script>
