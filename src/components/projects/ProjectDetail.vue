@@ -11,9 +11,8 @@
 				</ul>
 				<!-- <p v-html="project.intro"></p> -->
 				<p>
-					The initial idea behind Peregrine was a website that would connect fellow travelers together by common interests before their trip had even started. As part of my final project during my bootcamp, I mistakenly jumped right into the project after a designing a few wireframes and a basic ERD, but didn't spend enough time on site functionality and implementation. Therefore, any neat ideas I had during development was often implemented without understanding how it would benefit or work with current functions. Needless to say, my simple idea suddenly became not so simple. Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.
+					The initial idea behind Peregrine was a website that would connect fellow travelers together by common interests before their trip had even started. As part of my final project during my bootcamp, I mistakenly jumped right into the project after a designing a few wireframes and a basic ERD, but didn't spend enough time on site functionality and implementation. Therefore, any neat ideas I had during development was often implemented without understanding how it would benefit or work with current functions. Needless to say, my simple idea suddenly became not so simple. Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.  Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.
 				</p>
-				<i class="read-more fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
 				<ul class="framework-icons">
 					<li v-for="framework in project.frameworks" v-html="framework"></li>
 				</ul>
@@ -31,7 +30,8 @@
 	
 	.project-wrap {
 		display: flex;
-
+		height: 480px;
+		
 		.side-arrow {
 			width: 50px;
 			height: 50px;
@@ -58,15 +58,15 @@
 			}
 		}
 
+
 		.project-info {
 			width: 50%;
 			max-height: 480px;
 			background-color: #fff;
 			z-index: 5;
-			overflow: hidden;
 
 			h1{
-				margin: 8% 5% 0;
+				margin: 5% 5% 0;
 				padding-left: 2.5%;
 				border-left: 5px solid #ff4081;
 				font-size: 1.5em;
@@ -86,6 +86,7 @@
 
 			.link-icons, .framework-icons {
 				margin-left: 5%;
+				margin-bottom: 0;
 
 				a {
 					color: inherit;
@@ -106,6 +107,7 @@
 				font-size: 2em;
 			}
 		}
+
 	}
 
 	/***************** HOVER *****************/
@@ -185,7 +187,18 @@
 
 
 	/***************** SMALL SCREEN COLLAPSE *****************/
-	@media only screen and (max-width : 926px){
+	@media only screen and (max-width : 1650px){
+		.project-info p{
+			font-size: 0.9em;
+		}
+
+		.project-info .framework-icons {
+			margin-top: 2.5%;
+		}
+	}
+
+
+	@media only screen and (max-width : 1025px){
 		.project-wrap {
 			flex-direction: column;
 			overflow: hidden;
