@@ -77,7 +77,7 @@ export default {
 		}
 
 		.nav-wrapper.headroom--pinned {
-			background-color: rgba(255, 255, 255, 0.6);
+			background-color: #fff;
 		}
 
 		.nav-wrapper.headroom--top {

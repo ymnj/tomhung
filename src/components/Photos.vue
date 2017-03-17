@@ -48,10 +48,6 @@ export default {
 		padding: 100px 10% 0;
 		background-color: #fff;
 
-		@media only screen and (max-width : 926px) {
-			padding: 100px 0 0;	
-		}
-
 		header {
 			h1 {
 				text-align: center;
@@ -68,17 +64,6 @@ export default {
 				padding: 5% 0;
 				margin: 0 auto;
 				line-height: 1.5em;
-			}
-
-			@media only screen and (max-width : 926px) {
-				h1 {
-					font-size: 4em;
-				}
-
-				p {
-					font-size: 1.2em;
-					padding: 10% 5%;
-				}
 			}
 
 		}
@@ -136,30 +121,47 @@ export default {
 			}
 	
 			li:hover {
-			    cursor: pointer;
-					
-			    img {
-						//transform: scale(1.2);
-			    	transition: all 0.75s;
-			    }
+		    cursor: pointer;
+				
+		    img {
+					//transform: scale(1.2);
+		    	transition: all 0.75s;
+		    }
 
-					.coverDescription {
-						transition: opacity 0.8s;
-						opacity: 1;
-					}
-
+				.coverDescription {
+					transition: opacity 0.8s;
+					opacity: 1;
+				}
 			}
+		}
 
-			@media only screen  and (max-width : 926px) {
+		@media only screen  and (max-width : 926px) {
+			
+			padding: 100px 0 0;	
+
+			ul {
 				flex-direction: column;
 				li {
 					width: 100%;
 				}
 			}
+
+			header h1 {
+				font-size: 4em;
+			}
+
+			header p {
+				font-size: 1.2em;
+				padding: 5% 5%;
+			}
 		}
 
-
 		@media screen and (max-width: 450px) {
+
+		  header h1 {
+				font-size: 3em;
+			}
+
 			p.intro {
 				font-size: 1em;
 			}
