@@ -110,15 +110,29 @@ export default {
 			padding: 5% 0;
 			margin: 0 auto;
 			line-height: 1.5em;
+		}
+	}
 
-			@media screen and (max-width: 926px) {
+	@media screen and (max-width: 926px) {
+		#album-container {
+			#intro {
 				font-size: 1em;
 				padding: 5%;
+			}
+			.cover-image {
+				max-width: 926px;
+				background-attachment:scroll !important;
 			}
 		}
 	}
 
 	@media screen and (max-width: 450px) {
+		#album-container {
+			.cover-image {
+				max-width: 450px;
+			}
+		}
+
 		.cover-text h1{
 			font-size: 10vw;
 		}

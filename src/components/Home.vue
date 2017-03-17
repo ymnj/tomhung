@@ -50,7 +50,7 @@
 
 #home-container {
 
-	height: 100vh;
+	min-height: 100vh;
 	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -68,6 +68,7 @@
 
 	h1 {
 		font-weight: lighter;
+		//font-size: 5.5vw;
 	}
 	
 	h1.name {
