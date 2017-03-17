@@ -253,4 +253,11 @@
 		}
 	}
 
+	@media only screen and (max-width : 450px){
+		.project-wrap .project-info p {
+			line-height: 1.4em;
+			font-size: 0.85em;
+		}
+	}
+
 </style>

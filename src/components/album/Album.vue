@@ -46,7 +46,7 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat center center fixed; background-size: cover;`;
+			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;`;
 		},
 		scroll() {
 			let duration = 1000;
@@ -66,14 +66,10 @@ export default {
 <style lang="scss" scoped>
 
 	#album-container {
-		background-color: #eee;
+		background-color: #fff;
 		font-family: 'Ek Mukta', sans-serif;
 
 		.cover-image {
-			-webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		 	background-size: cover;
 		 	position: relative;
 			width: 100%;
 		  height: 100vh;
@@ -82,9 +78,9 @@ export default {
 
 		.cover-text {
 	  	position: absolute;
-	  	width: 400px;
+	  	width: 300px;
 	  	height: 220px;
-	  	margin-left: -200px;
+	  	margin-left: -150px;
 	  	margin-top: -110px;
 	  	top: 50%; 
 	  	left: 50%;
@@ -120,6 +116,11 @@ export default {
 				padding: 5%;
 			}
 		}
-		
+	}
+
+	@media screen and (max-width: 450px) {
+		.cover-text h1{
+			font-size: 10vw;
+		}
 	}
 </style>

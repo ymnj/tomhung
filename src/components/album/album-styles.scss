@@ -5,7 +5,7 @@
 	justify-content: space-between;
 
 	div {
-		margin-bottom: 2%;
+		//margin-bottom: 2%;
 	}
 
 	p {
@@ -15,19 +15,6 @@
 		padding: 5% 0;
 		margin: 0 auto;
 		line-height: 1.5em;
-
-		@media screen and (max-width: 926px) {
-			font-size: 1em;
-			padding: 5%;
-		}
-	}
-
-	@media only screen and (max-width : 926px) {
-		margin: 0;
-
-		 div {
-			margin-bottom: 0;
-		}
 	}
 
 	img:not([src]) {
@@ -41,6 +28,22 @@
 	    }
 	}
 }
+
+@media only screen and (max-width : 926px) {
+	.image-flex-wrap {
+		margin: 0;
+
+		p {
+			font-size: 1em;
+			padding: 5%;
+		}
+
+		div {
+			margin-bottom: 0;
+		}
+	}
+}
+
 
 .image-small {
 	width: 49%;
