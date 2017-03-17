@@ -51,7 +51,7 @@
 #home-container {
 
 	height: 100vh;
-	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed; 
+	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,8 +92,9 @@
 	}
 
 	@media (max-width: 615px) {
+
 		#banner h1{
-			font-size: 9vw;
+			font-size: 5vw;
 		}
 	}
 

@@ -28,6 +28,7 @@
 	.project-wrap {
 		display: flex;
 		height: 480px;
+		margin: 0 10%;
 		
 		.side-arrow {
 			width: 50px;
@@ -245,4 +246,11 @@
 			}
 		}
 	}
+
+	@media only screen and (max-width : 926px){
+		.project-wrap {
+			margin: 0;
+		}
+	}
+
 </style>

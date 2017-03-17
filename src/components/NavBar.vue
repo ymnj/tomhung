@@ -63,8 +63,11 @@ export default {
 		margin-top: 10px;
 	}
 
-	nav {
+	.navbar-fixed.z-depth-0 {
 		min-height: 64px;
+	}
+
+	nav {
 		background: url('../assets/transparent.svg') center / cover;
 
 		//Hide Nav on scroll down
@@ -74,11 +77,15 @@ export default {
 		}
 
 		.nav-wrapper.headroom--pinned {
-			background-color: #fff;
+			background-color: rgba(255, 255, 255, 0.6);
 		}
 
 		.nav-wrapper.headroom--top {
 			background: url('../assets/transparent.svg') center / cover;
+		}
+
+		.brand-logo {
+			position: relative;
 		}
 
 		.nav-wrapper {
@@ -129,7 +136,22 @@ export default {
 				color: #000;
 			}
 		}
+
+
+		.nav-wrapper.lightNav.headroom--not-bottom.headroom--not-top.headroom--pinned {
+
+			#logo {
+				filter: invert(0%);
+			}
+
+			.right li a {
+				color: #000;
+			}
+		}
+
+
 		.lightNav {
+
 			.right li a {
 				color: #fff;
 			}
@@ -144,6 +166,22 @@ export default {
 
 	.nav-up {
 		top: -64px;
+	}
+
+	@media (max-width: 400px){
+
+		img#logo {
+			width: 30px;
+			height: 30px;
+		}
+
+		nav .nav-wrapper ul.right {
+			a {
+				font-size: 1em;
+				margin: 0 25px;
+		  	letter-spacing: 1px;
+			}
+		}
 	}
 
 

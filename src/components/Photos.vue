@@ -2,7 +2,7 @@
 	<div id="photos-container">
 		<header>
 			<h1>Photography</h1>
-			<p>Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so the hobby never took off. 
+			<p class="intro">Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so the hobby never took off. 
 			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
 		</header>
 		<ul>
@@ -63,10 +63,11 @@ export default {
 
 			p {
 				max-width: 600px;
-				padding: 5% 0;
 				font-size: 1.4em;
 				letter-spacing: 1px;
+				padding: 5% 0;
 				margin: 0 auto;
+				line-height: 1.5em;
 			}
 
 			@media only screen and (max-width : 926px) {
@@ -157,6 +158,12 @@ export default {
 			}
 		}
 
+
+		@media screen and (max-width: 450px) {
+			p.intro {
+				font-size: 1em;
+			}
+		}
 
 	}
 </style>

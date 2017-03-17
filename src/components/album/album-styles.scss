@@ -15,10 +15,19 @@
 		padding: 5% 0;
 		margin: 0 auto;
 		line-height: 1.5em;
+
+		@media screen and (max-width: 926px) {
+			font-size: 1em;
+			padding: 5%;
+		}
 	}
 
 	@media only screen and (max-width : 926px) {
 		margin: 0;
+
+		 div {
+			margin-bottom: 0;
+		}
 	}
 
 	img:not([src]) {

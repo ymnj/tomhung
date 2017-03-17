@@ -24,11 +24,18 @@
 
 <style lang="scss">
 	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
-	
+
+	html {
+		height: 100%;
+	}
+
 	body {
-		
+
+		height: 100%;
+
 		.content-layout {
 			margin-top: -64px;
+			height: 100%;
 			width: 100%;
 			z-index: -5;
 		}
@@ -40,15 +47,12 @@
 
 .fade-enter-active {
 	transition: opacity 0.5s ease;
-	//\\transition-delay: 0.25s;
 }
 
 .fade-leave {
 }
 
 .fade-leave-active {
-	// transition: opacity 0.25s ease;
-	// opacity: 0;
 }
 
 </style>

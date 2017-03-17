@@ -2,7 +2,7 @@
 	<div id="projects-container">
 		<header>
 			<h1>Projects</h1>
-			<p>
+			<p class="intro">
 			Here is a selection of some of the projects I have worked on over the past year. If you'd like to see more, please check out my Github.Here is a selection of some of the projects I have worked on over the past year. If you'd like to see more, please check out my Github.</p>
 		</header>
 	
@@ -24,9 +24,6 @@ import projects from './projects.js';
  			return {
  				projectsList: projects
  			}
- 		},
- 		mounted() {
- 
  		}
  	}
 </script>
@@ -38,7 +35,7 @@ import projects from './projects.js';
 	#projects-container	{
 
 		font-family: $font;
-		padding: 100px 10% 0;
+		padding-top: 100px;
 	
 		header{
 			
@@ -68,7 +65,12 @@ import projects from './projects.js';
 					font-size: 1.2em;
 					padding: 10% 5%;
 				}
+			}
+		}
 
+		@media screen and (max-width: 450px) {
+			p.intro {
+				font-size: 1em;
 			}
 		}
 
