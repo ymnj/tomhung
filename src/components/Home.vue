@@ -64,11 +64,12 @@
 
   #banner {
   	padding: 30vh 0 0 10%;
+
   }
 
 	h1 {
 		font-weight: lighter;
-		//font-size: 5.5vw;
+		margin: 2% 0;
 	}
 	
 	h1.name {
@@ -79,6 +80,7 @@
 	#icons {
 
 		padding-top: 15px;
+		//font-size: 2vw;
 		
 		a {
 			margin: 12px;
@@ -89,6 +91,16 @@
 		i {
 			font-size: 1.5em;
 			color: #ff4081;
+		}
+	}
+
+	@media (max-width: 1024px){
+		#banner h1 {
+			font-size: 5.5vw;
+		}
+
+		#icons {
+			font-size: 2vw;
 		}
 	}
 

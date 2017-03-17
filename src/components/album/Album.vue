@@ -5,16 +5,14 @@
 			<figcaption class="cover-text">
 				<h1 class="animated fadeInDown">{{ albumInfo.title }}</h1>
 				<p class="animated fadeInUp">{{ albumInfo.tagLine }}</p>
-				<i class="material-icons md-48 animated zoomIn" @click="scroll">arrow_drop_down_circle</i>
+				<i class="fa fa-chevron-circle-down fa-3x animated zoomIn" aria-hidden="true" @click="scroll"></i>
 			</figcaption>
 		</div>
-
 		<section id="intro">{{ albumInfo.intro }}</section>
 
 		<component v-bind:is="album">
 		  <!-- component changes when album changes! -->
 		</component>
-		
 	</div>
 </template>
 
@@ -89,6 +87,7 @@ export default {
 		  letter-spacing: 3px;
 
 			.material-icons.md-48 {
+				max-width: 48px;
 				font-size: 48px;
 				cursor: pointer;
 			}
@@ -135,6 +134,10 @@ export default {
 
 		.cover-text h1{
 			font-size: 10vw;
+		}
+
+		i.fa {
+			font-size: 1.5em;
 		}
 	}
 </style>

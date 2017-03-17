@@ -217,7 +217,7 @@
 				top: 0;
 				left: 0;
 				height: 100%;
-				transform: translateX(-100%);
+				-webkit-transform: translateX(-100%);
 
 				p {
 					line-height: 1.8em;
@@ -242,7 +242,7 @@
 
 			.project-info {
 				transition: transform 0.25s ease;
-				transform: translateX(0%);
+				-webkit-transform: translateX(0%);
 			}
 		}
 	}
@@ -254,8 +254,9 @@
 	}
 
 	@media only screen and (max-width : 450px){
+
 		.project-wrap .project-info p {
-			line-height: 1.4em;
+			line-height: 1.8em;
 			font-size: 0.85em;
 		}
 	}
