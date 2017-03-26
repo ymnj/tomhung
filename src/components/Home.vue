@@ -51,7 +51,7 @@
 #home-container {
 
 	min-height: 100vh;
-	background: url("../assets/main-background.jpg") #A9B7C0 no-repeat center center fixed;
+	background: url("../assets/main-background.jpg") #fff no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

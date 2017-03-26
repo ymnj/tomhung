@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueLazyload from 'vue-lazyload';
+import VueAnalytics from 'vue-analytics';
 
 import App from './App.vue';
-import {routes} from './routes';
-
+import {routes} from './config/routes';
 
 Vue.use(VueRouter);
 Vue.use(VueLazyload);
@@ -20,6 +20,11 @@ const router = new VueRouter({
 	  }
 	}
 });
+
+Vue.use(VueAnalytics, { 
+  id: 'UA-96170872-1',
+  router 
+})
 
 
 new Vue({
