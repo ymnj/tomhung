@@ -81,14 +81,9 @@ export default {
 				overflow: hidden;
 
 				//Animate CSS delay to render after transition fadein
-				-webkit-animation-duration: 2s;
-			  -webkit-animation-delay: 0.25s;
-			  -moz-animation-duration: 1s;
-			  -moz-animation-delay: 0.25s;
-			  -o-animation-duration: 1s;
-			  -o-animation-delay: 0.25s;
-			  -ms-animation-duration: 1s;
-			  -ms-animation-delay: 0.25s;
+				animation-duration: 2s;
+			 	animation-delay: 0.25s;
+			  
 			  
 				.coverDescription {
 					background-color: rgba(0, 0, 0, 0.5);
@@ -101,7 +96,7 @@ export default {
 				  width: 100%;  
 				  height: 100%; 
 				  margin: 0 auto;
-				  -webkit-backface-visibility: hidden;
+				  backface-visibility: hidden;
 
 				  p {
 				  	letter-spacing: 5px;

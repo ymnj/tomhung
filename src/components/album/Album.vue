@@ -44,7 +44,7 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;`;
+			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat center center fixed; background-size: cover;`;
 		},
 		scroll() {
 			let duration = 1000;
@@ -95,12 +95,8 @@ export default {
 	  }
 
 	  h1, p, i {
-	  	-webkit-animation-duration: 1s;
-			-webkit-animation-delay: 0.5s;
-			-moz-animation-duration: 1s;
-			-moz-animation-delay: 0.5s;
-			-ms-animation-duration: 1s;
-			-ms-animation-delay: 0.5s;
+	  	animation-duration: 1s;
+			animation-delay: 0.5s;
 	  }
 
 		#intro {

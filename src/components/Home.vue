@@ -52,9 +52,6 @@
 
 	min-height: 100vh;
 	background: url("../assets/main-background.jpg") #fff no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 
 	/*Fix for choppy background image on CHROME. only for webkit  browsers*/

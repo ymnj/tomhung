@@ -131,15 +131,11 @@
 			background-color: #666362;
 			margin-right: -25px;
 			transition: all 0.5s ease;
-			webkit-box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.75);
-			-moz-box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.75);
 			box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.75);
 		}
 
 		.project-wrap:nth-child(odd){
 			.side-arrow {
-				webkit-box-shadow: 2px -2px 25px 0px rgba(0,0,0,0.75);
-				-moz-box-shadow: 2px -2px 25px 0px rgba(0,0,0,0.75);
 				box-shadow: 2px -2px 25px 0px rgba(0,0,0,0.75);
 			}
 		}
@@ -217,7 +213,7 @@
 				top: 0;
 				left: 0;
 				height: 100%;
-				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
 
 				p {
 					line-height: 1.8em;
@@ -242,7 +238,7 @@
 
 			.project-info {
 				transition: transform 0.25s ease;
-				-webkit-transform: translateX(0%);
+				transform: translateX(0%);
 			}
 		}
 	}
