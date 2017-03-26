@@ -35,7 +35,7 @@ module.exports = {
 		title: "blog",
 		screen: require('../../assets/blog-screen.png'),
 		links: [
-						`<a href="hhttp://tomhung-blog.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
+						`<a href="http://tomhung-blog.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
 						`<a href="https://github.com/ymnj/rails-blog" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
 					 ],
 		intro: `Developing this blog was my introduction to the Rails framework and the MVC design pattern. It was an ongoing project throughout the bootcamp and was built overtime as I learned more about the concepts and languages that go into a web application. While this sort of project is fairly basic and non-complex, the experience allowed me to understand the RESTful style of building web applications as well standard CRUD functions for dealing with the postgreSQL database. Throughout the process, I was able to implement multiple models with 1:M or M:N relationships and integrate them with my controllers and views. I was also able to experiment with numerous Rails gems that provided useful functions such as CanCanCan for authorization or friend_id for URL slugs to name a few.`,
