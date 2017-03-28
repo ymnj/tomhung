@@ -3,7 +3,7 @@
 		<nav class="z-depth-0 transparent">
 	    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
 	      <router-link class="brand-logo left" to="/" exact>
-					<img id="logo" src="../../src/assets/TH03.png">
+					<img id="logo" src="../../src/assets/brand-logo.png">
 	    	</router-link>
 	      <ul class="right">
 	          <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>

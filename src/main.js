@@ -8,6 +8,7 @@ import {routes} from './config/routes';
 
 import 'animate.css/animate.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'font-mfizz/font/font-mfizz.css';
 
 Vue.use(VueRouter);
 Vue.use(VueLazyload);
