@@ -68,12 +68,12 @@ export default {
 	}
 
 	nav {
-		background: url('../assets/transparent.svg') center / cover;
+		// background: url('../assets/transparent.svg') center / cover;
 
 		//Hide Nav on scroll down
 		.nav-wrapper.headroom--unpinned {
 			top: -64px;
-			background: url('../assets/transparent.svg') center / cover;
+			// background: url('../assets/transparent.svg') center / cover;
 		}
 
 		.nav-wrapper.headroom--pinned {
@@ -81,7 +81,8 @@ export default {
 		}
 
 		.nav-wrapper.headroom--top {
-			background: url('../assets/transparent.svg') center / cover;
+		 	background: url('../assets/transparent.svg') center / cover;
+		 	background-color: transparent;
 		}
 
 		.brand-logo {
