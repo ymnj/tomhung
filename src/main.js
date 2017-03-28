@@ -6,6 +6,9 @@ import VueAnalytics from 'vue-analytics';
 import App from './App.vue';
 import {routes} from './config/routes';
 
+import 'animate.css/animate.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
 Vue.use(VueRouter);
 Vue.use(VueLazyload);
 

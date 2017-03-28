@@ -33,6 +33,19 @@ module.exports = {
         }
       },
       {
+        test: /\.scss$/,
+        loader: 'vue-style-loader!css-loader!sass-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'vue-style-loader!css-loader!sass-loader'
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
+
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules\/(?!(autotrack|dom-utils))/

@@ -1,6 +1,6 @@
 <template>
 	<div class="navbar-fixed">
-		<nav class="z-depth-0">
+		<nav class="z-depth-0 transparent">
 	    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
 	      <router-link class="brand-logo left" to="/" exact>
 					<img id="logo" src="../../src/assets/TH03.png">
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-require('materialize-css');
+require('materialize-css/sass/materialize.scss');
 const Headroom = require('headroom.js');
 
 export default {
