@@ -9,8 +9,6 @@
 			</figcaption>
 		</div>
 		<section id="intro">{{ albumInfo.intro }}</section>
-
-
 		<component v-bind:is="album">
 		  <!-- component changes when album changes! -->
 		</component>

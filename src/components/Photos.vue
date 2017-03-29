@@ -7,7 +7,7 @@
 		</header>
 		<ul>
 			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)" class="animated fadeIn">
-				<img v-lazy="cover.imgUrl" lazy="loading">
+				<img :src="cover.imgUrl">
 				<figcaption class="coverDescription">
 					<h2>{{cover.title}}</h2>
 					<p>{{cover.tagLine}}</p>
@@ -111,9 +111,9 @@ export default {
 				display: block;
 			}
 
-			img[lazy=loading] {
-			 	background: url('../assets/spinner.svg') no-repeat center center; 
-			}
+			// img[lazy=loading] {
+			//  	background: url('../assets/spinner.svg') no-repeat center center; 
+			// }
 	
 			li:hover {
 		    cursor: pointer;

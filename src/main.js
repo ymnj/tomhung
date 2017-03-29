@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import VueLazyload from 'vue-lazyload';
 import VueAnalytics from 'vue-analytics';
 
 import App from './App.vue';
@@ -11,7 +10,11 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'font-mfizz/font/font-mfizz.css';
 
 Vue.use(VueRouter);
-Vue.use(VueLazyload);
+Vue.use(VueAnalytics, { 
+  id: 'UA-96170872-1',
+  router 
+})
+
 
 const router = new VueRouter({
 	routes,
@@ -24,11 +27,6 @@ const router = new VueRouter({
 	  }
 	}
 });
-
-Vue.use(VueAnalytics, { 
-  id: 'UA-96170872-1',
-  router 
-})
 
 
 new Vue({
