@@ -43,7 +43,7 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background: #fff url(${this.albumInfo.imgUrl}) no-repeat center center fixed; background-size: cover;`;
+			this.backgroundImage = `background: #fff url( http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/` + this.albumInfo.imgUrl + `) no-repeat center center fixed; background-size: cover;`;
 		},
 		scroll() {
 			let duration = 1000;
@@ -65,7 +65,6 @@ export default {
 
 	#album-container {
 		background-color: #fff;
-		font-family: 'Ek Mukta', sans-serif;
 
 		.cover-image {
 		 	position: relative;

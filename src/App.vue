@@ -23,7 +23,6 @@
 </script>
 
 <style lang="scss">
-	@import url('https://fonts.googleapis.com/css?family=Ek+Mukta');
 
 	html {
 		height: 100%;

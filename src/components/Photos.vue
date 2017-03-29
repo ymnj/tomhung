@@ -7,7 +7,10 @@
 		</header>
 		<ul>
 			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)" class="animated fadeIn">
-				<img :src="cover.imgUrl">
+				<img :src="`http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/` + cover.imgUrl"
+						  :srcset="`http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/` + cover.imgUrl + ` 926w,
+						  					http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/` + cover.imgUrl + ` 450w`"
+							sizes="(max-width: 450px) 450w, (min-width: 927px) 450w"/>
 				<figcaption class="coverDescription">
 					<h2>{{cover.title}}</h2>
 					<p>{{cover.tagLine}}</p>
@@ -41,10 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 
-	$font: 'Ek Mukta', sans-serif;
-
 	#photos-container {
-		font-family: $font;
 		padding: 100px 10% 0;
 		background-color: #fff;
 
@@ -52,7 +52,6 @@ export default {
 			h1 {
 				text-align: center;
 				letter-spacing: 1px;
-				font-family: $font;
 				font-weight: 600;
 				font-size: 4.5em;
 			}

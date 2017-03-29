@@ -30,11 +30,8 @@ import projects from './projects.js';
 
 <style lang="scss" scoped>
 
-	$font: 'Ek Mukta', sans-serif;
-
 	#projects-container	{
 
-		font-family: $font;
 		padding-top: 100px;
 	
 		header{
@@ -42,7 +39,6 @@ import projects from './projects.js';
 			h1 {
 				text-align: center;
 				letter-spacing: 1px;
-				font-family: $font;
 				font-weight: 600;
 				font-size: 4.5em;
 			}
