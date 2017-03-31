@@ -1,194 +1,223 @@
 <template>
 	<div class="image-flex-wrap">
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-1.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-1.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-1.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-1.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-1.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-1.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-1.jpg 450w" 
+			 		  /> 
 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-3.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-3.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-3.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-3.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-3.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-3.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-3.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-2.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-2.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-2.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-2.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-2.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-2.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-4.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-4.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-4.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-4.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-4.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-4.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-5.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-5.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-5.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-5.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-5.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-5.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-5.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-6.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-6.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-6.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-6.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-6.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-6.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-6.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-7.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-7.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-7.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-7.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-7.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-7.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-8.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-8.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-8.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-8.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-8.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-8.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-9.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-9.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-9.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-9.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-9.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-9.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-9.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-10.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-10.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-10.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-10.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-10.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-10.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-11.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-11.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-11.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-11.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-11.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-11.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-12.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-12.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-12.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-12.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-12.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-12.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-12.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-13.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-13.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-13.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-13.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-13.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-13.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-14.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-14.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-14.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-14.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-14.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-14.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-15.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-15.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-15.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-15.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-15.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-15.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-15.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-16.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-16.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-16.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-16.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-16.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-16.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-16.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-17.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-17.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-17.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-17.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-17.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-17.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-18.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-18.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-18.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-18.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-18.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-18.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-19.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-19.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-19.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-19.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-19.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-19.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-19.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-20.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-20.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-20.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-20.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-20.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-20.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-20.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-21.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-21.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-21.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-21.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-21.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-21.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-21.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-22.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-22.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-22.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-22.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-22.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-22.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-23.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-23.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-23.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-23.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-23.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-23.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-24.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-24.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-24.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-24.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-24.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-24.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-24.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-25.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-25.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-25.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-25.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-25.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-25.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-25.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-26.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-26.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-26.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-26.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-26.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-26.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-27.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-27.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-27.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-27.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-27.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-27.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-28.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-28.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-28.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-28.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-28.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-28.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-28.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/taiwan-29.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-29.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-29.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/taiwan-29.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/taiwan-29.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/taiwan-29.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/taiwan-29.jpg 450w" 
+			 		  /> 
 		</div>
 
 		<p>
@@ -196,109 +225,125 @@
 		</p> 
 		
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-1.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-1.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-1.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-1.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-1.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-1.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-1.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-2.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-2.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-2.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-2.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-2.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-2.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-2.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-3.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-3.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-3.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-3.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-3.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-3.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-4.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-4.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-4.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-4.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-4.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-4.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-5.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-5.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-5.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-5.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-5.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-5.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-5.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-6.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-6.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-6.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-6.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-6.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-6.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-6.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-7.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-7.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-7.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-7.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-7.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-7.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-8.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-8.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-8.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-8.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-8.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-8.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-8.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-9.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-9.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-9.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-9.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-9.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-9.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-10.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-10.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-10.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-10.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-10.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-10.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-11.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-11.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-11.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-11.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-11.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-11.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-11.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-12.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-12.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-12.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-12.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-12.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-12.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-12.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-13.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-13.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-13.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-13.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-13.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-13.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-small">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-14.jpg" 
-					 srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-14.jpg 926w,
-			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-14.jpg 450w" 
-			 		 sizes="(min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-14.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-14.jpg 926w,
+			 						 http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-14.jpg 450w" 
+			 		 /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-15.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-15.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-15.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-15.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-15.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-15.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-15.jpg 450w" 
+			 		  /> 
 		</div>
 		<div class="image-large">
-			<img src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/v1487481481/asia/hk-16.jpg" 
-						srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-16.jpg 1344w,
+			<img class="lazyload"
+			     data-src="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-16.jpg" 
+				data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1487481481/asia/hk-16.jpg 1344w,
 			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1487481481/asia/hk-16.jpg 926w,
-			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/v1487481481/asia/hk-16.jpg 450w" 
-			 		   sizes="(min-width: 926px) 1344w, (min-width: 451px) 926w, (max-width: 450px) 450w"> 
+			 							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_60,w_450/v1487481481/asia/hk-16.jpg 450w" 
+			 		  /> 
 		</div>
 	</div>
 </template>

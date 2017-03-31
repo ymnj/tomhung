@@ -77,6 +77,13 @@ img {
 	height: 100%;
 }
 
-img[lazy=loading] {
- 	background: url('../../assets/spinner.svg') no-repeat center center; 
+.lazyload {
+	opacity: 0;
 }
+
+.lazyloading {
+	opacity: 1;
+	transition: opacity 300ms;
+	background: #f7f7f7 url('../../assets/spinner.svg') no-repeat center;
+}
+

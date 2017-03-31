@@ -9,6 +9,8 @@ import 'animate.css/animate.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'font-mfizz/font/font-mfizz.css';
 
+import 'lazysizes';
+
 Vue.use(VueRouter);
 Vue.use(VueAnalytics, { 
   id: 'UA-96170872-1',
