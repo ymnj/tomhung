@@ -10,6 +10,7 @@
 				<img :src="`http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/` + cover.imgUrl"
 						  :srcset="`http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/` + cover.imgUrl + ` 926w,
 						  					http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_450/` + cover.imgUrl + ` 450w`"
+						  :alt="cover.tagLine"
 							sizes="(max-width: 450px) 450w, (min-width: 927px) 450w"/>
 				<figcaption class="coverDescription">
 					<h2>{{cover.title}}</h2>
@@ -109,10 +110,6 @@ export default {
 				position: relative;
 				display: block;
 			}
-
-			// img[lazy=loading] {
-			//  	background: url('../assets/spinner.svg') no-repeat center center; 
-			// }
 	
 			li:hover {
 		    cursor: pointer;

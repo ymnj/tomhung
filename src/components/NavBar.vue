@@ -1,14 +1,14 @@
 <template>
-	<div class="navbar-fixed">
+	<div class="navbar-fixed" itemscope itemtype="http://schema.org/WPHeader">
 		<nav class="z-depth-0 transparent">
 	    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
 	      <router-link class="brand-logo left" to="/" exact>
-					<img id="logo" src="../../src/assets/brand-logo.png">
+					<img itemprop="logo" itemscope itemtype="http://schema.org/image" id="logo" src="../../src/assets/brand-logo.png">
 	    	</router-link>
-	      <ul class="right">
-	          <li><router-link active-class="is-active" to="/" exact>Home</router-link></li>
-		       	<li><router-link active-class="is-active" to="/photos">Photos</router-link><li>
-		        <li><router-link active-class="is-active" to="/projects">Projects</router-link><li>
+	      <ul class="right" itemscope itemtype="http://schema.org/Thing">
+	          <li><router-link active-class="is-active" itemprop="url" to="/" exact>Home</router-link></li>
+		       	<li><router-link active-class="is-active" itemprop="url" to="/photos">Photos</router-link><li>
+		        <li><router-link active-class="is-active" itemprop="url" to="/projects">Projects</router-link><li>
 	      </ul>
 	    </div>
 	  </nav>

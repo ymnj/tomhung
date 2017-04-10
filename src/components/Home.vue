@@ -2,7 +2,9 @@
 	<div id="home-container">
 		<div id="banner">
 			<h1 class="welcomeMsg">{{ welcomeMsg.toUpperCase() }}</h1>
-			<h1 class="name">{{ name.toUpperCase() }}</h1>
+			<h1 class="name" itemscope itemtype="http://schema.org/Person">
+				<span itemprop="name">{{ name.toUpperCase() }}</span>
+			</h1>
 			
 			<div id="icons">
 				<a :href="link.link" target="_blank" v-for="link in links"><i :class="link.icon" aria-hidden="true"></i></a>

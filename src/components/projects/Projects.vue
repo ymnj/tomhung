@@ -3,7 +3,7 @@
 		<header>
 			<h1>Projects</h1>
 			<p class="intro">
-			Here is a selection of some of the projects I have worked on over the past year. If you'd like to see more, please check out my Github.Here is a selection of some of the projects I have worked on over the past year. If you'd like to see more, please check out my Github.</p>
+			Here is a selection of some of the projects I have worked on over the past year. If you'd like to see more, please check out my Github.</p>
 		</header>
 	
 		<projectDetail :project="project" v-for="project in projectsList"></projectDetail>

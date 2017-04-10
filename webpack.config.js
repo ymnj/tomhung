@@ -1,6 +1,10 @@
 var path = require('path')
 var webpack = require('webpack')
 
+var Path = require('path')
+var PrerenderSpaPlugin = require('prerender-spa-plugin')
+
+
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -54,6 +58,14 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new PrerenderSpaPlugin(
+      // Absolute path to compiled SPA
+      Path.join(__dirname, 'dist'),
+      // List of routes to prerender
+      [ '/', '/photos', '/photos/asia', '/photos/tofino', '/photos/stanley-park', '/photos/sea-to-sky', '/projects' ]
+    )
+  ],
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.common.js'
