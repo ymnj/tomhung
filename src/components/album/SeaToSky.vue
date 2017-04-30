@@ -2,6 +2,7 @@
 	<div class="image-flex-wrap">
 		<div class="image-large" itemscope itemtype="http://schema.org/image">
 			<img class="lazyload"  itemprop="photo"
+				data-sizes="auto"
 		    data-src="http://res.cloudinary.com/tomhung/image/upload/q_70,w_1344/v1488168835/sea_to_sky/sea-to-sky-1.jpg"
 		 data-srcset="http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_1344/v1488168835/sea_to_sky/sea-to-sky-1 1344w,
  							http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/v1488168835/sea_to_sky/sea-to-sky-1 926w,

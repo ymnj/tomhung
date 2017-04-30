@@ -46,6 +46,7 @@ export default {
 <style lang="scss" scoped>
 
 	#photos-container {
+		transition: padding 500ms ease;
 		padding: 100px 10% 0;
 		background-color: #fff;
 

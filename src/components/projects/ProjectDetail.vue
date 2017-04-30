@@ -26,6 +26,7 @@
 <style lang="scss">
 	
 	.project-wrap {
+		transition: margin 500ms ease;
 		display: flex;
 		height: 480px;
 		margin: 0 10%;

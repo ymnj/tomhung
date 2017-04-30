@@ -61,6 +61,7 @@ export default {
 		width: 40px;
 		height: 40px;
 		margin-top: 10px;
+		position: relative;
 	}
 
 	.navbar-fixed.z-depth-0 {
@@ -85,7 +86,7 @@ export default {
 		 	background-color: transparent;
 		}
 
-		.brand-logo {
+		.brand-logo.left{
 			position: relative;
 		}
 
