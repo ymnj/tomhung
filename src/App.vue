@@ -43,18 +43,17 @@
 		}
 	}	
 
-.fade-enter {
-	opacity: 0;
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: 500ms;
 }
 
 .fade-enter-active {
-	transition: opacity 0.5s ease;
+  transition-delay: 500ms;
 }
 
-.fade-leave {
-}
-
-.fade-leave-active {
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 
 </style>

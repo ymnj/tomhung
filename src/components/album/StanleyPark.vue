@@ -95,7 +95,6 @@
 			 		     title="Stanley Park Photograpy - Vancouver Seawall"
 			 		      /> 
 		</div>
-
 	</div>
 </template>
 

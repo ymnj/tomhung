@@ -209,7 +209,7 @@
 		</div>
 		<div class="image-small logo">
 			<img class="lazyload"  itemprop="photo" 
-				 src="../../assets/TH03.png">
+				 src="/static/TH03.png">
 		</div>
 		<div class="image-large" itemscope itemtype="http://schema.org/image">
 			<img class="lazyload"  itemprop="photo" 
@@ -259,6 +259,7 @@
 					title="Tofino Photography - Surf time" 		 		    
 			 		    />
 		</div>
+	</div>
 </template>
 
 <style lang="scss">

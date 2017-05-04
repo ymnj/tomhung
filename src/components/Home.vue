@@ -53,8 +53,9 @@
 #home-container {
 
 	min-height: 100vh;
-	background: url("../assets/main-background.jpg") #fff no-repeat center center fixed;
+	background: url("/static/main-background.jpg") #fff no-repeat center center fixed;
   background-size: cover;
+  transition: all 500ms;
 
 	/*Fix for choppy background image on CHROME. only for webkit  browsers*/
 	@media screen and (-webkit-min-device-pixel-ratio:0) {

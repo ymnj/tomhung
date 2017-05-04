@@ -115,6 +115,7 @@ alt="Vancouver Photography - View from Sea to Sky summit hike with gondola"
 			title="Vancouver Photography - Sea to Sky summit" 				
 			/>
 		</div>
+	</div>
 </template>
 
 <style lang="scss">

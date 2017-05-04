@@ -85,8 +85,9 @@ img {
 }
 
 .lazyloading {
+	height: 200px;
 	opacity: 1;
 	transition: opacity 300ms;
-	background: #f7f7f7 url('../../assets/spinner.svg') no-repeat center center;
+	background: #f7f7f7 url('/static/spinner.svg') no-repeat center;
 }
 

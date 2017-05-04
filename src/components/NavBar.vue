@@ -3,12 +3,12 @@
 		<nav class="z-depth-0 transparent">
 	    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
 	      <router-link class="brand-logo left" to="/" exact>
-					<img itemprop="logo" itemscope itemtype="http://schema.org/image" id="logo" src="../../src/assets/brand-logo.png">
+					<img itemprop="logo" itemscope itemtype="http://schema.org/image" id="logo" src="/static/brand-logo.png">
 	    	</router-link>
 	      <ul class="right" itemscope itemtype="http://schema.org/Thing">
 	          <li><router-link active-class="is-active" itemprop="url" to="/" exact>Home</router-link></li>
-		       	<li><router-link active-class="is-active" itemprop="url" to="/photos">Photos</router-link><li>
-		        <li><router-link active-class="is-active" itemprop="url" to="/projects">Projects</router-link><li>
+		       	<li><router-link active-class="is-active" itemprop="url" to="/photos">Photos</router-link></li>
+		        <li><router-link active-class="is-active" itemprop="url" to="/projects">Projects</router-link></li>
 	      </ul>
 	    </div>
 	  </nav>
@@ -58,6 +58,8 @@ export default {
 	$active-color: #ff4081;
 
 	#logo {
+		transition: width 600ms,
+								height 600ms;
 		width: 40px;
 		height: 40px;
 		margin-top: 10px;
@@ -70,6 +72,7 @@ export default {
 
 	nav {
 		// background: url('../assets/transparent.svg') center / cover;
+		min-height: 64px;
 
 		//Hide Nav on scroll down
 		.nav-wrapper.headroom--unpinned {
@@ -82,7 +85,7 @@ export default {
 		}
 
 		.nav-wrapper.headroom--top {
-		 	background: url('../assets/transparent.svg') center / cover;
+		 	background: url('/static/transparent.svg') center / cover;
 		 	background-color: transparent;
 		}
 
@@ -99,7 +102,12 @@ export default {
 			transition: all 1s ease;
 								
 			ul.right {
+				li {
+					min-height: 64px;
+				}
+
 				a {
+				min-height: 64px;
 				padding: 0;
 				margin: 0 50px;
 				color: $dark-color;
@@ -115,6 +123,7 @@ export default {
 				  position: absolute;
 				  width: 100%;
 				  height: 2px;
+				  top: 47px;
 				  bottom: 15px;
 				  left: 0;
 				  background-color: $active-color;
