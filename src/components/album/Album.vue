@@ -56,7 +56,7 @@ export default {
 	},
 	mounted() {
 		this.init();
-		this.$ga.trackPage(`/photos/${this.album}`);
+		//this.$ga.trackPage(`/photos/${this.album}`);
 	}
 }
 </script>

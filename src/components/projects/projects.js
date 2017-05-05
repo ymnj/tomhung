@@ -17,7 +17,7 @@ module.exports = {
 	},
 	codrlogue: {
 		title: "codrlogue",
-		screen:'/static/assets/codrlogue-screen.png',
+		screen:'/static/codrlogue-screen.png',
 		links: [
 						`<a href="http://codrlogue.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
 						`<a href="https://github.com/jennli/codrlogue" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
@@ -33,7 +33,7 @@ module.exports = {
 	},
 	blog: {
 		title: "blog",
-		screen:'/static/assets/blog-screen.png',
+		screen:'/static/blog-screen.png',
 		links: [
 						`<a href="http://tomhung-blog.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
 						`<a href="https://github.com/ymnj/rails-blog" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
