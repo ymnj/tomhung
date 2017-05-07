@@ -5,7 +5,7 @@ module.exports = {
 						`<a href="http://peregrine-app.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
 						`<a href="https://github.com/ymnj/peregrine" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
 					 ],
-		screen: '/static/peregrine-screen.png',
+		screen: './static/peregrine-screen.png',
 		intro: `The initial idea behind Peregrine was a website that would connect fellow travelers together by common interests before their trip had even started. Users would be able to add details of an upcoming trip and be linked up with other travelers that had similar itineraries. As part of my final project during my bootcamp, I mistakenly jumped right into the project after a designing a few wireframes and a basic ERD, but didn't spend enough time on site functionality and implementation. Therefore, any neat ideas I had during development was often implemented without understanding how it would benefit or work with current functions. Although the main focus of Peregrine became disorganized, it gave me the chance to learn and implement several features using APIs I had never used before.`,
 		frameworks: [
 									`<i class="icon-ruby-on-rails" title="Ruby on Rails"></i>`,
@@ -17,7 +17,7 @@ module.exports = {
 	},
 	codrlogue: {
 		title: "codrlogue",
-		screen:'/static/codrlogue-screen.png',
+		screen:'./static/codrlogue-screen.png',
 		links: [
 						`<a href="http://codrlogue.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
 						`<a href="https://github.com/jennli/codrlogue" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
@@ -33,7 +33,7 @@ module.exports = {
 	},
 	blog: {
 		title: "blog",
-		screen:'/static/blog-screen.png',
+		screen:'./static/blog-screen.png',
 		links: [
 						`<a href="http://tomhung-blog.herokuapp.com" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
 						`<a href="https://github.com/ymnj/rails-blog" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`

@@ -1,19 +1,20 @@
 <template>
 	<div id="home-container">
 		<div id="banner">
-			<h1 class="welcomeMsg">{{ welcomeMsg.toUpperCase() }}</h1>
-			<h1 class="name" itemscope itemtype="http://schema.org/Person">
+			<h1 class="welcomeMsg animated fadeInDown">{{ welcomeMsg.toUpperCase() }}</h1>
+			<h1 class="name animated zoomIn" itemscope itemtype="http://schema.org/Person">
 				<span itemprop="name">{{ name.toUpperCase() }}</span>
 			</h1>
 			
 			<div id="icons">
-				<a :href="link.link" target="_blank" v-for="link in links"><i :class="link.icon" aria-hidden="true"></i></a>
+				<a v-for="link in links" :href="link.link" target="_blank"><i :class="link.icon" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+
 
 	export default {
 		data() {
@@ -43,7 +44,11 @@
 					}
 				]
 			}
+		},
+		mounted() {
+		
 		}
+
 	}
 </script>
 
@@ -88,9 +93,35 @@
 		a:first-child {
 			margin-left: 8px;
 		}
+
 		i {
 			font-size: 1.5em;
 			color: #ff4081;
+			opacity: 0;
+		}
+		
+		i.fa-linkedin-square {
+			animation: fade 500ms ease-in-out forwards;
+			animation-delay: 0ms;
+		}
+
+		i.fa-github-alt {
+			animation: fade 500ms ease-in-out forwards;
+			animation-delay: 200ms;
+		}
+
+		i.fa-google-plus {
+			animation: fade 500ms ease-in-out forwards;
+			animation-delay: 400ms;
+		}
+
+		i.fa-instagram {
+			animation: fade 500ms ease-in-out forwards;
+			animation-delay: 600ms;
+		}
+
+		@keyframes fade {
+			100% { opacity: 1; }
 		}
 	}
 

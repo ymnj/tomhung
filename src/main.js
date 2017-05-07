@@ -5,9 +5,9 @@ import VueAnalytics from 'vue-analytics';
 import App from './App.vue';
 import {routes} from './config/routes';
 
-import 'animate.css/animate.min.css';
-import 'font-awesome/css/font-awesome.min.css';
-import 'font-mfizz/font/font-mfizz.css';
+import '../node_modules/animate.css/animate.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import '../node_modules/font-mfizz/font/font-mfizz.css';
 
 
 import 'lazysizes';

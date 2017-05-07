@@ -2,8 +2,8 @@
 	<div class="navbar-fixed" itemscope itemtype="http://schema.org/WPHeader">
 		<nav class="z-depth-0 transparent">
 	    <div class="nav-wrapper" :class="{ lightNav: requireLightText }">
-	      <router-link class="brand-logo left" to="/" exact>
-					<img itemprop="logo" itemscope itemtype="http://schema.org/image" id="logo" src="/static/brand-logo.png">
+	    	<router-link class="brand-logo left" to="/" exact>
+				<img itemprop="logo" itemscope itemtype="http://schema.org/image" id="logo" src="../../static/brand-logo.png">
 	    	</router-link>
 	      <ul class="right" itemscope itemtype="http://schema.org/Thing">
 	          <li><router-link active-class="is-active" itemprop="url" to="/" exact>Home</router-link></li>
