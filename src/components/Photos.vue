@@ -42,9 +42,9 @@ export default {
 <style lang="scss" scoped>
 
 	#photos-container {
-		transition: padding 500ms ease;
 		padding: 100px 10% 0;
 		background-color: #fff;
+		transition: all 700ms ease;
 
 		header {
 			h1 {
@@ -112,8 +112,9 @@ export default {
 		    cursor: pointer;
 				
 		    img {
-					//transform: scale(1.2);
+					transform: scale(1.2);
 		    	transition: all 0.75s;
+		    	backface-visibility: hidden;
 		    }
 
 				.coverDescription {
@@ -124,7 +125,6 @@ export default {
 		}
 
 		@media only screen  and (max-width : 926px) {
-			
 			padding: 100px 0 0;	
 
 			ul {

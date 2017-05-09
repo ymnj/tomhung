@@ -48,10 +48,9 @@ export default {
 		scroll() {
 			let duration = 1000;
 		  let edgeOffset = 0;
-		  let scrollDiv = document.getElementById("main")
-		  let myScroller = zenscroll.createScroller(scrollDiv, duration, edgeOffset)
+			zenscroll.setup(duration, edgeOffset)
 		  let target = document.getElementById("intro")
-		  myScroller.to(target);
+		  zenscroll.to(target);
 		}
 	},
 	mounted() {

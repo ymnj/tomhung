@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import VueAnalytics from 'vue-analytics';
 
 import App from './App.vue';
-import {routes} from './config/routes';
+import {routes} from './router';
 
 import '../node_modules/animate.css/animate.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
