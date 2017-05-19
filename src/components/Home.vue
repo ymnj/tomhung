@@ -7,7 +7,7 @@
 			</h1>
 			
 			<div id="icons">
-				<a v-for="link in links" :href="link.link" target="_blank"><i :class="link.icon" aria-hidden="true"></i></a>
+				<a v-for="link in links" :href="link.link" :target="link.target"><i :class="link.icon" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
@@ -25,30 +25,36 @@
 					{
 						title: 'LinkedIn',
 						icon: 'fa fa-linkedin-square',
-						link: 'http://www.linkedin.com/in/tomhungyvr'
+						link: 'http://www.linkedin.com/in/tomhungyvr',
+						target: '_blank'
 					},
 					{
 						title: 'Github',
 						icon: 'fa fa-github-alt',
-						link: 'https://github.com/ymnj'
+						link: 'https://github.com/ymnj',
+						target: '_blank'
 					},
 					{
 						title: 'Google',
 						icon: 'fa fa-google-plus',
-						link: 'https://plus.google.com/u/1/103585423442230985484/about'
+						link: 'https://plus.google.com/u/1/103585423442230985484/about',
+						target: '_blank'
 					},
 					{
 						title: 'Instagram',
 						icon: 'fa fa-instagram',
-						link: 'https://www.instagram.com/ym.nj/'
+						link: 'https://www.instagram.com/ym.nj/',
+						target: '_blank'
+					},
+					{
+						title: 'Blog',
+						icon: 'fa fa-commenting',
+						link: 'http://www.tomhung.ca/blog',
+						target: '_self'
 					}
 				]
 			}
-		},
-		mounted() {
-		
 		}
-
 	}
 </script>
 
@@ -60,7 +66,6 @@
 	min-height: 100vh;
 	background: url("/static/main-background.jpg") #fff no-repeat center center fixed;
   background-size: cover;
-  transition: all 500ms;
 
 	/*Fix for choppy background image on CHROME. only for webkit  browsers*/
 	@media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -85,7 +90,6 @@
 	#icons {
 
 		padding-top: 15px;
-		//font-size: 2vw;
 		
 		a {
 			margin: 12px;
@@ -118,6 +122,11 @@
 		i.fa-instagram {
 			animation: fade 500ms ease-in-out forwards;
 			animation-delay: 600ms;
+		}
+
+		i.fa-commenting {
+			animation: fade 500ms ease-in-out forwards;
+			animation-delay: 800ms;
 		}
 
 		@keyframes fade {

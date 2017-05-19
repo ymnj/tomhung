@@ -43,7 +43,7 @@ export default {
 	methods: {
 		init() {
 			this.albumInfo = albums[`${this.album}`];
-			this.backgroundImage = `background: #fff url( http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/` + this.albumInfo.imgUrl + `) no-repeat center center fixed; background-size: cover;`;
+			this.backgroundImage = `background: url( http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70/` + this.albumInfo.imgUrl + `) no-repeat center center fixed; background-size: cover;`;
 		},
 		scroll() {
 			let duration = 1000;
@@ -53,7 +53,7 @@ export default {
 		  zenscroll.to(target);
 		}
 	},
-	mounted() {
+	beforeMount() {
 		this.init();
 	}
 }
@@ -62,10 +62,11 @@ export default {
 <style lang="scss" scoped>
 
 	#album-container {
-		background-color: #fff;
 
 		.cover-image {
 		 	position: relative;
+		 	top: 0;
+		 	left: 0;
 			width: 100%;
 		  height: 100vh;
 			text-align: center;

@@ -30,6 +30,7 @@
 		display: flex;
 		height: 480px;
 		margin: 0 10%;
+		background-color: #fff;
 		
 		.side-arrow {
 			width: 50px;

@@ -1,10 +1,8 @@
 <template>
 	<div id="photos-container">
-		<header>
-			<h1>Photography</h1>
-			<p class="intro">Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so the hobby never took off. 
-			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with. </p>
-		</header>
+
+		<intro :title="title" :introduction='introduction'></intro>
+
 		<ul>
 			<li v-for="cover in albumCovers" @click="navigateTo(cover.url)" class="animated fadeIn">
 				<img :src="`http://res.cloudinary.com/tomhung/image/upload/f_auto,q_70,w_926/` + cover.imgUrl"
@@ -24,11 +22,18 @@
 <script>		
 
 import albums from './album/albums.js';
+import intro from './Intro.vue';
 
 export default {
+	components: {
+		intro
+	},
 	data() {
 		return {
-			albumCovers: albums
+			albumCovers: albums,
+			title: 'Photography',
+ 			introduction: `Started with a Nikon D80 with a kit 18-55mm & 50mm prime. While using it on trips, I realized the size and weight of a DSLR was too cumbersome for the type of travel photography I enjoy so the hobby never took off. 
+			Since then I've switched to a considerably smaller Fujifilm X100T which has been fastastic to shoot with.`
 		}
 	},
 	methods: {
@@ -44,7 +49,6 @@ export default {
 	#photos-container {
 		padding: 100px 10% 0;
 		background-color: #fff;
-		transition: all 700ms ease;
 
 		header {
 			h1 {
@@ -112,9 +116,8 @@ export default {
 		    cursor: pointer;
 				
 		    img {
-					transform: scale(1.2);
+					//transform: scale(1.2);
 		    	transition: all 0.75s;
-		    	backface-visibility: hidden;
 		    }
 
 				.coverDescription {

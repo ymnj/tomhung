@@ -80,14 +80,28 @@ img {
 	height: 100%;
 }
 
-.lazyload {
+
+// This lazyload with spinner not working as well as simply fading in image
+
+// .lazyload {
+// 	opacity: 0;
+// }
+
+// .lazyloading {
+// 	height: 200px;
+// 	opacity: 1;
+// 	transition: opacity 300ms;
+// 	background: #f7f7f7 url('/static/spinner.svg') no-repeat center;
+// }
+
+
+.lazyload,
+.lazyloading {
 	opacity: 0;
 }
-
-.lazyloading {
-	height: 200px;
+.lazyloaded {
 	opacity: 1;
-	transition: opacity 300ms;
-	background: #f7f7f7 url('/static/spinner.svg') no-repeat center;
+	transition: opacity 1700ms;
 }
+
 
