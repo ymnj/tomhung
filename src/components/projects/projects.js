@@ -31,6 +31,56 @@ module.exports = {
 									`<i class="icon-css3" title="CSS3"></i>`
 					]
 	},
+	ReactYoutube: {
+		title: 'React Youtube',
+		screen: './static/react-youtube.png',
+		links: [
+						`<a href="http://tomhung.ca/react-youtube-player" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
+						`<a href="https://github.com/ymnj/react-Youtube-player" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
+					 ],
+		intro: `Simple React application created as part of an introduction to React using ES6. Uses Youtube's API to search, display and play Youtube videos. Introduction to the different types of components, passing of data and methods through props. `,
+		frameworks: [
+									`<i class="icon-reactjs" title="ReactJS"></i>`,
+									`<i class="icon-nodejs" title="Node"></i>`,
+									`<i class="icon-html5" title="HTML5"></i>`,
+									`<i class="icon-css3" title="CSS3"></i>`,
+									`<i class="icon-npm" title="NPM"></i>`
+								]
+	},
+	TzuChi: {
+		title: 'Tzu Chi TCM',
+		screen: './static/tzuchi.png',
+		links: [
+						`<a href="http://tomhung.ca/test-tzuchi
+" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
+						`<a href="https://github.com/ymnj/tzuchi" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
+					 ],
+		intro: `This was my first attempt at learning and creating a custom theme in Wordpress. Development is currently ongoin as part of a volunteer opportunity for the Vancouver branch of an NGO called Tzu Chi. I have worked with them in the past but recently they required some development work for a website they're setting up. The project initially began with a "free theme" they had selected, but many of the features they would eventually require were paywalled. Therefore, I figured it would be easier as well as a good opportunity to learn the Wordpress API if I just created a new theme that had what they wanted.`,
+		frameworks: [
+									`<i class="icon-wordpress" title="Wordpress"></i>`,
+									`<i class="icon-bootstrap" title="Bootstrap"></i>`,
+									`<i class="icon-html5" title="HTML5"></i>`,
+									`<i class="icon-css3" title="CSS3"></i>`,
+									`<i class="icon-sass" title="SASS"></i>`
+								]
+	},
+	Chatter: {
+		title: 'Chatter',
+		screen: './static/chatter.png',
+		links: [
+						`<a href="https://tomhung-chatter.herokuapp.com
+" target="_blank"><i class="fa fa-globe" aria-hidden="true""></i></a>`,
+						`<a href="https://github.com/ymnj/chatter" target="_blank"><i class="fa fa-github" aria-hidden="true""></i></a>`
+					 ],
+		intro: `Built this chat application playing around with a tutorial on Socket.io. It's a very basic demo showing some of Socket.io's functionality.`,
+		frameworks: [
+									`<i class="icon-heroku" title="Heroku"></i>`,
+									`<i class="icon-nodejs" title="Node"></i>`,
+									`<i class="icon-html5" title="HTML5"></i>`,
+									`<i class="icon-css3" title="CSS3"></i>`,
+									`<i class="icon-npm" title="NPM"></i>`
+								]
+	},
 	blog: {
 		title: "blog",
 		screen:'./static/blog-screen.png',
