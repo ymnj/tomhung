@@ -7,7 +7,7 @@
 			</h1>
 			
 			<div id="icons">
-				<a v-for="link in links" :href="link.link" :target="link.target"><i :class="link.icon" aria-hidden="true"></i></a>
+				<a v-for="link in links" :href="link.link" :target="link.target" rel="noopener"><i :class="link.icon" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</div>
